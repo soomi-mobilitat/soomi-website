@@ -74,7 +74,7 @@ const Header = () => {
               Iniciar Sessió
             </Button>
             <Button 
-              className="rounded-full bg-somi-500 hover:bg-somi-600 text-white"
+              className="rounded-full bg-somi-500 hover:bg-somi-600 text-somi-900"
             >
               Registrar-se
             </Button>
@@ -116,7 +116,7 @@ const Header = () => {
               Iniciar Sessió
             </Button>
             <Button 
-              className="w-full justify-center rounded-full bg-somi-500 hover:bg-somi-600"
+              className="w-full justify-center rounded-full bg-somi-500 hover:bg-somi-600 text-somi-900"
             >
               Registrar-se
             </Button>

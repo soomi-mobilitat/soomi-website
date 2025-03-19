@@ -68,7 +68,7 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="page-section py-24 bg-gray-50 dark:bg-gray-900">
+    <section id="features" className="page-section py-24 bg-somi-50 dark:bg-gray-900">
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
           <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-somi-100 text-somi-800 mb-4">
@@ -100,39 +100,39 @@ const Features = () => {
           ))}
         </div>
 
-        <div className="mt-24 bg-gradient-to-br from-somi-500 to-somi-700 rounded-3xl p-8 md:p-12 text-white animate-on-scroll">
+        <div className="mt-24 bg-gradient-to-br from-somi-500 to-somi-700 rounded-3xl p-8 md:p-12 text-somi-900 animate-on-scroll">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
               <h3 className="heading-md mb-4">Preparat per transformar el transport de la teva comunitat?</h3>
-              <p className="text-white/80 mb-6">
+              <p className="text-somi-900/80 mb-6">
                 Uneix-te a Somi avui i comença a construir una xarxa de viatges compartits més sostenible, connectada i econòmica dins la teva comunitat.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="px-6 py-3 bg-white text-somi-700 font-medium rounded-full hover:bg-white/90 transition-colors">
                   Comença Ara
                 </button>
-                <button className="px-6 py-3 bg-transparent border border-white/30 rounded-full hover:bg-white/10 transition-colors">
+                <button className="px-6 py-3 bg-transparent border border-white/60 rounded-full hover:bg-white/10 transition-colors text-somi-900">
                   Saber-ne Més
                 </button>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              <div className="p-4 bg-white/10 rounded-xl border border-white/20 backdrop-blur-sm">
+              <div className="p-4 bg-white/20 rounded-xl border border-white/30 backdrop-blur-sm">
                 <div className="text-3xl font-bold mb-1">100+</div>
-                <div className="text-sm text-white/70">Comunitats</div>
+                <div className="text-sm text-somi-900/90">Comunitats</div>
               </div>
-              <div className="p-4 bg-white/10 rounded-xl border border-white/20 backdrop-blur-sm">
+              <div className="p-4 bg-white/20 rounded-xl border border-white/30 backdrop-blur-sm">
                 <div className="text-3xl font-bold mb-1">5K+</div>
-                <div className="text-sm text-white/70">Usuaris Actius</div>
+                <div className="text-sm text-somi-900/90">Usuaris Actius</div>
               </div>
-              <div className="p-4 bg-white/10 rounded-xl border border-white/20 backdrop-blur-sm">
+              <div className="p-4 bg-white/20 rounded-xl border border-white/30 backdrop-blur-sm">
                 <div className="text-3xl font-bold mb-1">10K+</div>
-                <div className="text-sm text-white/70">Viatges Compartits</div>
+                <div className="text-sm text-somi-900/90">Viatges Compartits</div>
               </div>
-              <div className="p-4 bg-white/10 rounded-xl border border-white/20 backdrop-blur-sm">
+              <div className="p-4 bg-white/20 rounded-xl border border-white/30 backdrop-blur-sm">
                 <div className="text-3xl font-bold mb-1">50K+</div>
-                <div className="text-sm text-white/70">CO2 Estalviat (kg)</div>
+                <div className="text-sm text-somi-900/90">CO2 Estalviat (kg)</div>
               </div>
             </div>
           </div>
