@@ -36,25 +36,25 @@ const Hero = () => {
           <div className="animate-on-scroll">
             <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-somi-100 text-somi-800 mb-6">
               <span className="flex h-2 w-2 rounded-full bg-somi-500 mr-2"></span>
-              Community-based carpooling
+              Viatge compartit basat en comunitats
             </div>
             
             <h1 className="heading-xl text-gray-900 dark:text-white mb-6">
-              Share rides with your<br />
-              <span className="text-gradient">community</span>
+              Comparteix viatges amb la teva<br />
+              <span className="text-gradient">comunitat</span>
             </h1>
             
             <p className="body-lg text-gray-600 dark:text-gray-300 mb-8 max-w-lg">
-              Somi connects you with your community for easy, sustainable, and cost-effective carpooling. Create or join rides within your trusted networks.
+              Somi et connecta amb la teva comunitat per a un transport compartit fàcil, sostenible i econòmic. Crea o uneix-te a viatges dins de les teves xarxes de confiança.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button className="rounded-full bg-somi-500 hover:bg-somi-600 text-white px-8 py-6 button-hover-effect">
-                Get Started
+                Comença Ara
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Button>
               <Button variant="outline" className="rounded-full px-8 py-6 border-gray-300 hover:bg-gray-50 dark:border-gray-700 dark:hover:bg-gray-800 button-hover-effect">
-                How It Works
+                Com Funciona
               </Button>
             </div>
             
@@ -64,8 +64,8 @@ const Hero = () => {
                   <Users size={20} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white">Communities</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Join trusted networks</p>
+                  <h3 className="font-semibold text-gray-900 dark:text-white">Comunitats</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Uneix-te a xarxes de confiança</p>
                 </div>
               </div>
               
@@ -74,8 +74,8 @@ const Hero = () => {
                   <MapPin size={20} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white">Rides</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Create or join rides</p>
+                  <h3 className="font-semibold text-gray-900 dark:text-white">Viatges</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Crea o uneix-te a viatges</p>
                 </div>
               </div>
               
@@ -84,8 +84,8 @@ const Hero = () => {
                   <Calendar size={20} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white">Calendar</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">Plan your journeys</p>
+                  <h3 className="font-semibold text-gray-900 dark:text-white">Calendari</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">Planifica els teus trajectes</p>
                 </div>
               </div>
             </div>
@@ -108,13 +108,13 @@ const Hero = () => {
                         <Users size={16} />
                       </div>
                     </div>
-                    <div className="text-xs opacity-80">Westgate Community</div>
+                    <div className="text-xs opacity-80">Comunitat Westgate</div>
                   </div>
                   
                   {/* App Content */}
                   <div className="p-4">
                     <div className="mb-6">
-                      <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3">UPCOMING RIDES</h3>
+                      <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3">PRÒXIMS VIATGES</h3>
                       <div className="bg-gray-50 dark:bg-gray-700 p-4 rounded-xl mb-3">
                         <div className="flex justify-between items-center mb-2">
                           <div className="flex items-center space-x-2">
@@ -122,8 +122,8 @@ const Hero = () => {
                               <span className="text-xs font-medium text-somi-800">JD</span>
                             </div>
                             <div>
-                              <div className="text-sm font-medium">John's Ride</div>
-                              <div className="text-xs text-gray-500 dark:text-gray-400">Downtown • 3 seats</div>
+                              <div className="text-sm font-medium">Viatge d'en Joan</div>
+                              <div className="text-xs text-gray-500 dark:text-gray-400">Centre • 3 seients</div>
                             </div>
                           </div>
                           <div className="text-xs font-medium bg-somi-100 text-somi-800 px-2 py-1 rounded-full">
@@ -131,7 +131,7 @@ const Hero = () => {
                           </div>
                         </div>
                         <Button className="w-full rounded-lg bg-somi-500 hover:bg-somi-600 text-white text-xs h-8">
-                          Join Ride
+                          Unir-se al Viatge
                         </Button>
                       </div>
                       
@@ -142,30 +142,30 @@ const Hero = () => {
                               <span className="text-xs font-medium text-somi-800">SM</span>
                             </div>
                             <div>
-                              <div className="text-sm font-medium">Sarah's Ride</div>
-                              <div className="text-xs text-gray-500 dark:text-gray-400">Mall • 2 seats</div>
+                              <div className="text-sm font-medium">Viatge de la Sara</div>
+                              <div className="text-xs text-gray-500 dark:text-gray-400">Centre Comercial • 2 seients</div>
                             </div>
                           </div>
                           <div className="text-xs font-medium bg-somi-100 text-somi-800 px-2 py-1 rounded-full">
-                            2:15 PM
+                            14:15
                           </div>
                         </div>
                         <Button className="w-full rounded-lg bg-somi-500 hover:bg-somi-600 text-white text-xs h-8">
-                          Join Ride
+                          Unir-se
                         </Button>
                       </div>
                     </div>
                     
                     <div>
-                      <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3">COMMUNITIES</h3>
+                      <h3 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3">COMUNITATS</h3>
                       <div className="space-y-3">
                         <div className="flex items-center space-x-3 p-3 bg-gray-50 dark:bg-gray-700 rounded-xl">
                           <div className="h-10 w-10 rounded-full bg-somi-200 flex items-center justify-center">
                             <Users size={18} className="text-somi-700" />
                           </div>
                           <div className="flex-1">
-                            <div className="text-sm font-medium">Westgate Community</div>
-                            <div className="text-xs text-gray-500 dark:text-gray-400">128 members</div>
+                            <div className="text-sm font-medium">Comunitat Westgate</div>
+                            <div className="text-xs text-gray-500 dark:text-gray-400">128 membres</div>
                           </div>
                         </div>
                         
@@ -174,8 +174,8 @@ const Hero = () => {
                             <Users size={18} className="text-gray-700 dark:text-gray-300" />
                           </div>
                           <div className="flex-1">
-                            <div className="text-sm font-medium">Tech Park Commuters</div>
-                            <div className="text-xs text-gray-500 dark:text-gray-400">76 members</div>
+                            <div className="text-sm font-medium">Usuaris Tech Park</div>
+                            <div className="text-xs text-gray-500 dark:text-gray-400">76 membres</div>
                           </div>
                         </div>
                       </div>
@@ -188,19 +188,19 @@ const Hero = () => {
                       <div className="h-6 w-6 rounded-full bg-somi-100 flex items-center justify-center">
                         <Users size={14} className="text-somi-800" />
                       </div>
-                      <span className="text-[10px] mt-1 text-somi-800">Groups</span>
+                      <span className="text-[10px] mt-1 text-somi-800">Grups</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <div className="h-6 w-6 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
                         <MapPin size={14} className="text-gray-600 dark:text-gray-400" />
                       </div>
-                      <span className="text-[10px] mt-1 text-gray-600 dark:text-gray-400">Rides</span>
+                      <span className="text-[10px] mt-1 text-gray-600 dark:text-gray-400">Viatges</span>
                     </div>
                     <div className="flex flex-col items-center">
                       <div className="h-6 w-6 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
                         <Calendar size={14} className="text-gray-600 dark:text-gray-400" />
                       </div>
-                      <span className="text-[10px] mt-1 text-gray-600 dark:text-gray-400">Calendar</span>
+                      <span className="text-[10px] mt-1 text-gray-600 dark:text-gray-400">Calendari</span>
                     </div>
                   </div>
                 </div>

@@ -22,10 +22,10 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Features', href: '#features' },
-    { name: 'Communities', href: '#communities' },
-    { name: 'Rides', href: '#rides' },
+    { name: 'Inici', href: '#home' },
+    { name: 'Característiques', href: '#features' },
+    { name: 'Comunitats', href: '#communities' },
+    { name: 'Viatges', href: '#rides' },
   ];
 
   return (
@@ -71,12 +71,12 @@ const Header = () => {
               variant="outline" 
               className="rounded-full bg-white/80 backdrop-blur-sm border-gray-200 hover:bg-white"
             >
-              Log In
+              Iniciar Sessió
             </Button>
             <Button 
               className="rounded-full bg-somi-500 hover:bg-somi-600 text-white"
             >
-              Sign Up
+              Registrar-se
             </Button>
           </div>
         </nav>
@@ -113,12 +113,12 @@ const Header = () => {
               variant="outline" 
               className="w-full justify-center rounded-full"
             >
-              Log In
+              Iniciar Sessió
             </Button>
             <Button 
               className="w-full justify-center rounded-full bg-somi-500 hover:bg-somi-600"
             >
-              Sign Up
+              Registrar-se
             </Button>
           </div>
         </nav>

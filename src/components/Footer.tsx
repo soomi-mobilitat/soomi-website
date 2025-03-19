@@ -17,7 +17,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-gray-600 dark:text-gray-400 text-sm mb-6">
-              Community-based carpooling platform that connects trusted networks for shared, sustainable, and cost-effective transportation.
+              Plataforma de transport compartit basada en comunitats que connecta xarxes de confiança per a un transport compartit, sostenible i econòmic.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-500 hover:text-somi-600 dark:text-gray-400 dark:hover:text-somi-400">
@@ -36,47 +36,47 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Product</h3>
+            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Producte</h3>
             <ul className="space-y-3">
               <li>
                 <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-                  Features
+                  Característiques
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-                  Communities
+                  Comunitats
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-                  Rides
+                  Viatges
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-                  Calendar
+                  Calendari
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-                  Mobile App
+                  App Mòbil
                 </a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Company</h3>
+            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Empresa</h3>
             <ul className="space-y-3">
               <li>
                 <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-                  About Us
+                  Sobre Nosaltres
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-                  Careers
+                  Carreres
                 </a>
               </li>
               <li>
@@ -86,43 +86,43 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-                  Press
+                  Premsa
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-                  Contact
+                  Contacte
                 </a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Resources</h3>
+            <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Recursos</h3>
             <ul className="space-y-3">
               <li>
                 <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-                  Help Center
+                  Centre d'Ajuda
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-                  Community Guidelines
+                  Directrius de la Comunitat
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-                  Safety Tips
+                  Consells de Seguretat
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-                  Privacy Policy
+                  Política de Privacitat
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-                  Terms of Service
+                  Termes del Servei
                 </a>
               </li>
             </ul>
@@ -131,17 +131,17 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 dark:text-gray-400 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Somi. All rights reserved.
+            © {new Date().getFullYear()} Somi. Tots els drets reservats.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-              Privacy Policy
+              Política de Privacitat
             </a>
             <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-              Terms of Service
+              Termes del Servei
             </a>
             <a href="#" className="text-gray-500 dark:text-gray-400 hover:text-somi-600 dark:hover:text-somi-400 text-sm">
-              Cookie Policy
+              Política de Cookies
             </a>
           </div>
         </div>
