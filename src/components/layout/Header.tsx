@@ -2,15 +2,7 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
-
-const navItems = [
-  { name: 'Inici', href: '#home' },
-  { name: 'Característiques', href: '#features' },
-  { name: 'Serveis', href: '#services' },
-  { name: 'Equip', href: '#team' },
-  { name: 'Contacte', href: '#contact' },
-  { name: 'Descarrega Somi', href: '#download' },
-];
+import { navItems } from './Layout.data.js';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
