@@ -14,7 +14,7 @@ export const municipalServicesSection = {
         },
         ctaSecondary: {
             label: "Contacta amb nosaltres",
-            href: "#download-contact",
+            href: "#contact",
         },
     },
     servicesHeader: "Els nostres serveis per ajuntaments i organitzacions",

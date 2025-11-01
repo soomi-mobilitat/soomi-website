@@ -65,7 +65,7 @@ const MunicipalServices = () => {
                 <div
                   key={index}
                   className="bg-green-50 dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-green-100 dark:border-gray-700 hover:shadow-md transition-all cursor-pointer flex flex-col h-full"
-                  onClick={() => document.getElementById('download-contact')?.scrollIntoView({ behavior: 'smooth' })}
+                  onClick={() => document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   <div className="flex justify-center mb-6">
                     <Icon className="h-12 w-12 text-green-700" />

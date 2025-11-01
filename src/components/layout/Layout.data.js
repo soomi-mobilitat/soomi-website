@@ -3,6 +3,6 @@ export const navItems = [
     { name: 'Característiques', href: '#features' },
     { name: 'Sobre nosaltres', href: '#about-us' },
     { name: 'Serveis', href: '#services' },
-    { name: 'Contacte', href: '#download-contact' },
-    { name: 'Descarrega Somi', href: '#download-contact' },
+    { name: 'Contacte', href: '#contact' },
+    { name: 'Descarrega Somi', href: '#download' },
 ];

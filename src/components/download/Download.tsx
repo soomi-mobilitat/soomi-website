@@ -20,7 +20,7 @@ const Download = () => {
   }, []);
 
   return (
-    <section id="download-contact" className="page-section py-24 bg-gray-50 dark:bg-gray-900">
+    <section id="download" className="page-section py-24 bg-gray-50 dark:bg-gray-900">
       <div className="container">
 
         {/* Header */}
@@ -76,7 +76,7 @@ const Download = () => {
             </div>
 
             {/* RIGHT */}
-            <div className="flex flex-col h-full text-center md:text-left">
+            <div id="contact" className="flex flex-col h-full text-center md:text-left scroll-mt-32">
               <h3 className="heading-md text-gray-900 dark:text-white mb-4">
                 {downloadContent.rightColumn.title}
               </h3>
