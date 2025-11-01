@@ -3,10 +3,10 @@ import { useEffect } from 'react';
 import Header from '@/components/layout/Header';
 import Hero from '@/components/hero/Hero';
 import Features from '@/components/features/Features';
-import Communities from '@/components/communities/Communities';
 import Download from '@/components/download/Download';
 import Footer from '@/components/layout/Footer';
 import ScrollToTopButton from '@/components/ui/scroll-to-top-button';
+import AboutUs from '@/components/about-us/AboutUs';
 
 const Index = () => {
   useEffect(() => {
@@ -38,7 +38,7 @@ const Index = () => {
       <main>
         <Hero />
         <Features />
-        <Communities />
+        <AboutUs />
         <Download />
         <ScrollToTopButton />
       </main>
