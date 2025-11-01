@@ -2,12 +2,12 @@ import { TabletSmartphone, BarChart3, Megaphone } from 'lucide-react';
 
 export const municipalServicesSection = {
     header: {
-        badge: "Serveis per Ajuntaments",
-        title: "Solucionem els reptes de mobilitat als municipis",
+        badge: "Serveis per organitzacions",
+        title: "Solucionem els reptes de mobilitat al teu municipi, empresa o institució",
         subtitle:
-            "Ajudem als Ajuntaments a diversificar les opcions de transport de la seva comunitat i els oferim un major control sobre la mobilitat del seu territori.",
+            "Ajudem als Ajuntaments i altres organitzacions a diversificar les opcions de transport de la seva comunitat i els oferim un major control sobre la mobilitat del seu territori.",
         description:
-            "Ens adaptem a les necessitats de cada municipi, treballant de manera propera i personal.",
+            "Ens adaptem a les necessitats de cada municipi o organització, treballant de manera propera i personal.",
         ctaPrimary: {
             label: "Descobreix els nostres serveis",
             href: "#services-list",
@@ -17,7 +17,7 @@ export const municipalServicesSection = {
             href: "#download-contact",
         },
     },
-    servicesHeader: "Els nostres serveis per ajuntaments",
+    servicesHeader: "Els nostres serveis per ajuntaments i organitzacions",
     services: [
         {
             icon: TabletSmartphone,
@@ -25,10 +25,10 @@ export const municipalServicesSection = {
             items: [
                 "📱 App premium privada: amb totes les funcionalitats i comunitats oficials.",
                 "🏛️ Imatge institucional i verificació oficial personalitzada.",
-                "👥 Comunitats oficials dels habitants del municipi.",
+                "👥 Comunitats oficials dels habitants del municipi o membres de l’organització.",
                 "✅ Sistema de verificació antifrau i de seguretat.",
             ],
-            image: "aa", // substitueix amb el camí real
+            image: "aa",
             alt: "App preview",
         },
         {
@@ -38,7 +38,7 @@ export const municipalServicesSection = {
                 "📊 Taula de control amb dades en temps real.",
                 "🗓️ Informe semestral amb els punts més rellevants.",
                 "⚙️ Adaptació del projecte segons les necessitats.",
-                "🎁 Disseny d'incentius per compartir trajectes.",
+                "🎁 Disseny d’incentius per compartir trajectes.",
             ],
             image: "aa",
             alt: "Dashboard preview",
@@ -47,8 +47,8 @@ export const municipalServicesSection = {
             icon: Megaphone,
             title: "Comunicació i màrqueting",
             items: [
-                "🧭 Estratègia de comunicació adaptada a cada territori.",
-                "💬 Atenció als membres i gestió d'incidències.",
+                "🧭 Estratègia de comunicació adaptada a cada territori o organització.",
+                "💬 Atenció als membres i gestió d’incidències.",
                 "🛠️ Suport tècnic continu.",
                 "🔔 Sistema de notificacions i avisos personalitzats.",
             ],
