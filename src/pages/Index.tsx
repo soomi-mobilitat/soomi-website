@@ -7,6 +7,7 @@ import Download from '@/components/download/Download';
 import Footer from '@/components/layout/Footer';
 import ScrollToTopButton from '@/components/ui/scroll-to-top-button';
 import AboutUs from '@/components/about-us/AboutUs';
+import Services from '@/components/services/Services';
 
 const Index = () => {
   useEffect(() => {
@@ -39,6 +40,7 @@ const Index = () => {
         <Hero />
         <Features />
         <AboutUs />
+        <Services />
         <Download />
         <ScrollToTopButton />
       </main>
