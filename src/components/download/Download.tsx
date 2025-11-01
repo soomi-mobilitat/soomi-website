@@ -51,7 +51,7 @@ const Download = () => {
               <p className="text-gray-600 dark:text-gray-300 mb-6 whitespace-pre-line">
                 {downloadContent.leftColumn.description}
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <div className="flex flex-col sm:flex-row items-center md:items-start gap-4">
                 <a
                   className={`block opacity-80 ${downloadContent.leftColumn.appStore.disabled ? 'cursor-not-allowed' : ''}`}
                   aria-disabled={downloadContent.leftColumn.appStore.disabled}
