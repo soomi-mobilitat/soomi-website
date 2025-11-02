@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Column 1: Logo + slogan */}
           <div className="flex flex-col items-start space-y-2">
             <div className="flex items-center space-x-2 mb-4">
-              <img src="/assets/icons/logo_compact.svg" alt="Somi logo" className="h-12 w-auto"></img>
+              <img src="/somi-website/assets/icons/logo_compact.svg" alt="Somi logo" className="h-12 w-auto"></img>
               <span className="font-bold text-2xl text-gray-900">
                 Somi
               </span>

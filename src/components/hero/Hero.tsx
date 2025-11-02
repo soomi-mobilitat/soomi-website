@@ -42,7 +42,7 @@ const Hero = () => {
             {/* Logo + slogan */}
             <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mb-8">
               <div className="flex-shrink-0 mb-4 md:mb-0">
-                <img src="/assets/icons/main_logo_mark.svg" alt="Somi Logo" className="h-48 w-auto" />
+                <img src="/somi-website/assets/icons/main_logo_mark.svg" alt="Somi Logo" className="h-48 w-auto" />
               </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-snug mb-2 mt-4">
                 {heroContent.slogan.main} <span className="text-somi-500">{heroContent.slogan.highlight}</span>
@@ -99,7 +99,7 @@ const Hero = () => {
                 <div className="h-1.5 w-20 bg-gray-800 rounded-full"></div>
               </div>
               <img
-                src="/assets/images/journey-list-popup-somi.jpg"
+                src="/somi-website/assets/images/journey-list-popup-somi.jpg"
                 alt="Somi App Mockup"
                 className="w-full h-full object-cover"
               />
