@@ -32,7 +32,7 @@ const Header = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="#" className="flex items-center space-x-2">
-          <img src="logo.svg" alt="Somi logo" className="h-10 w-auto"></img>
+          <img src="/assets/icons/logo_compact.svg" alt="Somi logo" className="h-12 w-auto"></img>
           <span className={cn(
             "font-bold text-2xl transition-colors duration-300",
             isScrolled ? "text-gray-900 dark:text-white" : "text-gray-900 dark:text-white"
