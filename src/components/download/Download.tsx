@@ -85,10 +85,12 @@ const Download = () => {
               </p>
               <a
                 href={`mailto:${downloadContent.rightColumn.email}`}
-                className="inline-flex items-center justify-center gap-2 bg-somi-500 hover:bg-somi-600 text-white px-6 py-3 rounded-full transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-somi-500 hover:bg-somi-600 text-white px-4 py-2 rounded-full transition-colors max-w-full"
               >
-                <Mail className="h-5 w-5" />
-                <b className='text-2xl'>{downloadContent.rightColumn.email}</b>
+                <Mail className="h-5 w-5 flex-shrink-0" />
+                <b className="text-xs sm:text-sm md:text-lg lg:text-2xl truncate">
+                  {downloadContent.rightColumn.email}
+                </b>
               </a>
             </div>
 
