@@ -66,6 +66,7 @@ const Hero = () => {
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12 mt-8">
               <Button
+                asChild
                 variant="outline"
                 className="rounded-full px-8 py-6 border-gray-300 hover:bg-gray-50 button-hover-effect"
               >
