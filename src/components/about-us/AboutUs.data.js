@@ -1,9 +1,10 @@
 // AboutUs.data.js
 import { Leaf, Globe, Users, Bolt, LandPlot, Handshake } from 'lucide-react';
 
+/// REFER COMPLETAMENT
+
 export const aboutUsSection = {
     header: {
-        badge: "Sobre nosaltres",
         title: "Per què hem creat Somi",
         // subtitle: "Durant la nostra etapa universitària vam experimentar de primera mà les dificultats de desplaçar-nos cada dia. Moltes persones necessiten moure's diàriament per estudiar, treballar o participar en tot tipus d'activitats, i vam veure la necessitat d'una solució millor. Somi neix per connectar persones i territoris, oferint desplaçaments més eficients i sostenibles, i fomentant comunitats cohesionades i col·laboratives."
         subtitle: [

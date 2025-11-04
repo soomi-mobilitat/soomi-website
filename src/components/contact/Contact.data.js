@@ -1,11 +1,10 @@
 export const downloadContent = {
     header: {
-        badge: "Descarrega l'aplicació",
         title: 'Pròximament disponible',
         subtitle: 'Aviat podràs descarregar Somi i unir-te a la comunitat en moviment.',
     },
     leftColumn: {
-        title: "Descarrega l'aplicació mòbil",
+        title: "Aplicació mòbil",
         description: "Aconsegueix l'experiència completa de Somi al teu telèfon. Gestiona fàcilment els viatges, comunica't amb la teva comunitat i rep notificacions en temps real.\n\nPròximament disponible a les principals plataformes.",
         appStore: {
             src: "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg",

@@ -26,13 +26,10 @@ const Header = () => {
           {/* Logo */}
           <a href="#" className="flex items-center space-x-2">
             <img
-              src="/assets/icons/logo_compact.svg"
+              src="/assets/icons/secondary_logo_mark_cropped.svg"
               alt="Somi logo"
               className="h-12 w-auto"
             />
-            <span className="font-bold text-2xl text-gray-900 dark:text-white">
-              Somi
-            </span>
           </a>
 
           {/* Desktop Navigation */}

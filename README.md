@@ -24,7 +24,7 @@ npm run build
 ```
 
 ## Construcció per producció
-Imatges d’Unsplash amb crèdit als autors:
+Imatges d'Unsplash amb crèdit als autors:
 
  - [GeoJango Maps](https://unsplash.com/@geojango_maps)
  - [Deng Xiang](https://unsplash.com/@dengxiangs)

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Mail } from 'lucide-react';
-import { downloadContent } from './Download.data.js';
+import { downloadContent } from './Contact.data.js';
 
 const Download = () => {
   useEffect(() => {
@@ -20,15 +20,11 @@ const Download = () => {
   }, []);
 
   return (
-    <section id="download" className="page-section py-24 bg-gray-50">
+    <section id="contact" className="page-section py-24 bg-gray-50">
       <div className="container">
 
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-8 animate-on-scroll">
-          <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-somi-100 text-somi-800 mb-4">
-            <span className="flex h-2 w-2 rounded-full bg-somi-500 mr-2"></span>
-            {downloadContent.header.badge}
-          </div>
           <div className="text-center max-w-3xl mx-auto mb-8 animate-on-scroll">
             <h2 className="heading-lg text-gray-900 mb-4">
               {downloadContent.header.title}
@@ -45,13 +41,13 @@ const Download = () => {
 
             {/* LEFT */}
             <div className="flex flex-col h-full text-center md:text-left">
-              <h3 className="heading-md text-gray-900 mb-4">
+              <h3 className="text-center heading-md text-gray-900 mb-4">
                 {downloadContent.leftColumn.title}
               </h3>
               <p className="text-gray-600 mb-6 whitespace-pre-line">
                 {downloadContent.leftColumn.description}
               </p>
-              <div className="flex flex-col sm:flex-row items-center md:items-start gap-4">
+              <div className="justify-center flex flex-col sm:flex-row items-center md:items-start gap-4">
                 <a
                   className={`block opacity-80 ${downloadContent.leftColumn.appStore.disabled ? 'cursor-not-allowed' : ''}`}
                   aria-disabled={downloadContent.leftColumn.appStore.disabled}
@@ -59,7 +55,7 @@ const Download = () => {
                   <img
                     src={downloadContent.leftColumn.appStore.src}
                     alt={downloadContent.leftColumn.appStore.alt}
-                    className="h-12 w-auto"
+                    className="h-12 w-auto lg:mr-8"
                   />
                 </a>
                 <a
@@ -76,8 +72,8 @@ const Download = () => {
             </div>
 
             {/* RIGHT */}
-            <div id="contact" className="flex flex-col h-full text-center md:text-left scroll-mt-32">
-              <h3 className="heading-md text-gray-900 mb-4">
+            <div className="flex flex-col h-full text-center md:text-left scroll-mt-32">
+              <h3 className="text-center heading-md text-gray-900 mb-4">
                 {downloadContent.rightColumn.title}
               </h3>
               <p className="text-gray-600 mb-6">

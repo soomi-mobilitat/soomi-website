@@ -24,10 +24,6 @@ const AboutUs = () => {
       <div className="container">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
-          <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800 mb-4">
-            <span className="flex h-2 w-2 rounded-full bg-green-500 mr-2"></span>
-            {aboutUsSection.header.badge}
-          </div>
           <h2 className="heading-lg text-gray-900 mb-4">
             {aboutUsSection.header.title}
           </h2>
