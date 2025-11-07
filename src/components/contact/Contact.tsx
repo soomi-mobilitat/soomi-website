@@ -29,7 +29,7 @@ const Contact = () => {
       }
     };
 
-    handleHashScroll(); // scroll si ja hi ha hash a l’inici
+    handleHashScroll();
     window.addEventListener('hashchange', handleHashScroll);
 
     return () => window.removeEventListener('hashchange', handleHashScroll);
@@ -58,17 +58,20 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
             {/* LEFT */}
-            <div className="flex flex-col h-full text-center md:text-left">
-              <h3 className="text-center heading-md text-gray-900 mb-4">
-                {downloadContent.leftColumn.title}
-              </h3>
-              <p className="text-gray-600 md:text-justify whitespace-pre-line">
-                {downloadContent.leftColumn.description1}
-              </p>
-              <p className="text-gray-600 mb-4 whitespace-pre-line">
-                {downloadContent.leftColumn.description2}
-              </p>
+            <div className="flex flex-col h-full text-center md:text-left justify-between">
+              <div>
+                <h3 className="text-center heading-md text-gray-900 mb-4">
+                  {downloadContent.leftColumn.title}
+                </h3>
+                <p className="text-gray-600 md:text-justify whitespace-pre-line">
+                  {downloadContent.leftColumn.description1}
+                </p>
+                <p className="text-gray-600 mb-4 whitespace-pre-line">
+                  {downloadContent.leftColumn.description2}
+                </p>
+              </div>
 
+              {/* Badges bottom */}
               <div className="justify-center flex flex-col sm:flex-row items-center md:items-start gap-4 lg:gap-8 pb-4 md:pb-0">
                 <a
                   className={`block opacity-80 ${downloadContent.leftColumn.appStore.disabled ? 'cursor-not-allowed' : ''}`}
@@ -94,13 +97,17 @@ const Contact = () => {
             </div>
 
             {/* RIGHT */}
-            <div className="right-column flex flex-col h-full text-center md:text-left scroll-mt-32">
-              <h3 className="text-center heading-md text-gray-900 mb-4">
-                {downloadContent.rightColumn.title}
-              </h3>
-              <p className="text-gray-600 mb-6 md:text-justify">
-                {downloadContent.rightColumn.description}
-              </p>
+            <div className="right-column flex flex-col h-full text-center md:text-left scroll-mt-32 justify-between">
+              <div>
+                <h3 className="text-center heading-md text-gray-900 mb-4">
+                  {downloadContent.rightColumn.title}
+                </h3>
+                <p className="text-gray-600 mb-6 md:text-justify">
+                  {downloadContent.rightColumn.description}
+                </p>
+              </div>
+
+              {/* Email bottom */}
               <a
                 href={`mailto:${downloadContent.rightColumn.email}`}
                 className="inline-flex items-center justify-center gap-2 bg-somi-500 hover:bg-somi-600 text-white px-4 py-2 rounded-full transition-colors max-w-full"
