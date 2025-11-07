@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { aboutUsSection } from './AboutUs.data.js';
+import { aboutUsSection } from './Mission.data.js';
 import { Unplug } from 'lucide-react';
 
 const AboutUs = () => {
@@ -20,7 +20,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section id="about-us" className="page-section py-24 bg-gray-50">
+    <section id="missio-valors" className="page-section py-24 bg-gray-50">
       <div className="container">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
@@ -31,12 +31,22 @@ const AboutUs = () => {
             {aboutUsSection.header.subtitle.map((part, index) => (
               <span
                 key={index}
-                className={part.emphasis ? 'font-bold bg-green-100' : ''}
+                className={part.emphasis ? 'font-bold text-xl text-somi-600' : ''}
               >
                 {part.text}
               </span>
             ))}
           </p>
+          <div className="mt-4">
+            <a
+              href={aboutUsSection.header.sourceLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-gray-500 hover:underline"
+            >
+              {aboutUsSection.header.sourceLabel}
+            </a>
+          </div>
         </div>
 
         {/* Content */}

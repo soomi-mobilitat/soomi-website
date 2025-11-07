@@ -6,7 +6,7 @@ import Features from '@/components/features/Features';
 import Download from '@/components/contact/Contact';
 import Footer from '@/components/layout/Footer';
 import ScrollToTopButton from '@/components/ui/scroll-to-top-button';
-import AboutUs from '@/components/about-us/AboutUs';
+import AboutUs from '@/components/mission/Mission';
 import Services from '@/components/services/Services';
 
 const Index = () => {
