@@ -22,10 +22,6 @@ const MunicipalServices = () => {
             {municipalServicesSection.header.title}
           </h2>
 
-          <h3 className="text-xl text-gray-700 font-medium mb-6">
-            {municipalServicesSection.header.subtitle}
-          </h3>
-
           <p className="text-gray-600 mb-10">
             {municipalServicesSection.header.description}
           </p>
