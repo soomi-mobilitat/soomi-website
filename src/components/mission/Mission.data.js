@@ -5,7 +5,7 @@ import { Leaf, Globe, Users, Bolt, LandPlot, Handshake } from 'lucide-react';
 
 export const missionContent = {
     header: {
-        title: "Per què hem creat Somi",
+        title: "Per què hem creat Somi ?", // posar somi en groc
         subtitle: [
             { emphasis: false, text: "La demanda de " },
             { emphasis: true, text: "cotxes compartits" },

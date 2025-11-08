@@ -5,7 +5,7 @@ export const contactContent = {
     },
     leftColumn: {
         title: "Aplicació mòbil",
-        description1: "Descarrega l'app de Somi per gaudir d'una mobilitat més sostenible i connectada.",
+        description1: "Descarrega l'app de Somi per gaudir d'una mobilitat més sostenible i eficient.",
         description2: "Pròximament a les principals plataformes.",
         appStore: {
             src: "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg",

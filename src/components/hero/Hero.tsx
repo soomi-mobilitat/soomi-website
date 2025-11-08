@@ -35,10 +35,10 @@ const Hero = () => {
           <div className="animate-on-scroll">
             {/* Logo + slogan */}
             <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mb-8">
-              <div className="flex-shrink-0 mb-4 md:mb-0">
-                <img src="/assets/icons/main_logo_mark.svg" alt="Somi Logo" className="h-48 w-auto" />
+              <div className="invisible sm:visible flex-shrink-0 mb-4 md:mb-0">
+                <img src="/assets/icons/main_logo_mark.svg" alt="Somi Logo" className="h-0 sm:h-48 w-auto" />
               </div>
-              <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-snug mb-2 mt-4">
+              <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-snug mb-2 mt-0 sm:mt-4">
                 {heroContent.slogan.main} <span className="text-somi-500">{heroContent.slogan.highlight}</span>
               </h1>
             </div>

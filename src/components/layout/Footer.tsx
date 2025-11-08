@@ -12,9 +12,14 @@ const Footer = () => {
           <div className="flex flex-col items-start space-y-2">
             <div className="flex items-center space-x-2 mb-4">
               <img
-                src="/assets/icons/secondary_logo_mark_cropped.svg"
+                src="/assets/icons/secondary_logo_mark-cropped.svg"
                 alt="Somi logo"
-                className="h-12 w-auto"
+                className="invisible h-0 w-auto sm:h-12 sm:visible"
+              />
+              <img
+                src="/assets/icons/main_logo_mark-cropped.svg"
+                alt="Somi logo"
+                className="visible h-24 w-auto sm:h-0 sm:invisible"
               />
             </div>
             <p className="text-gray-600 text-sm mb-6">

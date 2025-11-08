@@ -2,7 +2,7 @@ import { TabletSmartphone, BarChart3, Megaphone } from 'lucide-react';
 
 export const servicesContent = {
     header: {
-        title: "Solucionem els reptes de mobilitat de la vostra comunitat",
+        title: "Solucionem els reptes de mobilitat de la vostra comunitat", // posar reptes de mobilitat en groc
         description:
             "Ens adaptem a les necessitats de cada territori o organització, treballant de manera propera i personal.",
         ctaPrimary: {
@@ -20,7 +20,7 @@ export const servicesContent = {
             icon: TabletSmartphone,
             title: "L'app",
             items: [
-                "📱 App Somi premium inclosa per a tots els membres de la vostra comunitat.",
+                "📱 App Somi disponible per a tots els membres de la vostra comunitat.",
                 "🏛️ Imatge institucional integrada.",
                 "👥 Gestió d'una comunitat oficial de l'organització.",
                 "✅ Sistema de verificació de membres.",
