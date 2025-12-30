@@ -25,7 +25,14 @@ const Mission = () => {
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-8 animate-on-scroll">
           <h2 className="heading-lg text-gray-900 mb-4">
-            {missionContent.header.title}
+            {missionContent.header.title.map((part, index) => (
+              <span
+                key={index}
+                className={part.emphasis ? 'font-bold text-4xl text-somi-600' : ''}
+              >
+                {part.text}
+              </span>
+            ))}
           </h2>
           <p className="body-base text-gray-600 max-w-2xl mx-auto">
             {missionContent.header.subtitle.map((part, index) => (
@@ -37,16 +44,6 @@ const Mission = () => {
               </span>
             ))}
           </p>
-          <div className="mt-4">
-            <a
-              href={missionContent.header.sourceLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs text-gray-500 hover:underline"
-            >
-              {missionContent.header.sourceLabel}
-            </a>
-          </div>
         </div>
 
         {/* IMAGE BAND */}
@@ -54,9 +51,9 @@ const Mission = () => {
           <img
             src={missionContent.banner.image}
             alt={missionContent.banner.alt}
-            className="w-full h-48 object-cover rounded-2xl shadow-md"
+            className="w-full h-56 object-cover rounded-2xl shadow-md"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-white/30 to-transparent rounded-2xl"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-white/10 to-transparent rounded-2xl"></div>
         </div>
 
         {/* CONTENT */}

@@ -5,26 +5,29 @@ import { Leaf, Globe, Users, Bolt, LandPlot, Handshake } from 'lucide-react';
 
 export const missionContent = {
     header: {
-        title: "Per què hem creat Somi ?", // posar somi en groc
-        subtitle: [
-            { emphasis: false, text: "La demanda de " },
-            { emphasis: true, text: "cotxes compartits" },
-            { emphasis: false, text: " a Europa " },
-            { emphasis: true, text: "creix" },
-            { emphasis: false, text: " de manera contínua, amb increments de " },
-            { emphasis: true, text: "+10% l'any" },
-            { emphasis: false, text: " i augments acumulats de " },
-            { emphasis: true, text: "+20-30%" },
-            { emphasis: false, text: " en període triennal." }
+        title: [
+            { emphasis: false, text: "Per què hem creat " },
+            { emphasis: true, text: "Somi" },
+            { emphasis: false, text: " ?" },
         ],
-        sourceLabel: "* Fluctuo, European Shared Mobility Index (Q1 2024), publicat per l'European Urban Mobility Observatory (Comissió Europea).",
-        sourceLink: "https://marketplace.eiturbanmobility.eu/insights/what-are-the-current-shared-mobility-trends-european-shared-mobility-index?utm_source=chatgpt.com",
+        //"Per què hem creat Somi ?", // posar somi en groc
+        subtitle: [
+            { emphasis: false, text: "La nostra missió és construir un " },
+            { emphasis: true, text: "territori" },
+            { emphasis: false, text: " interconnectat, on la " },
+            { emphasis: true, text: "mobilitat" },
+            { emphasis: false, text: " quotidiana sigui sinònim d'" },
+            { emphasis: true, text: "eficiència" },
+            { emphasis: false, text: " i cooperació, i generar una xarxa de comunitats més unides i " },
+            { emphasis: true, text: "sostenibles" },
+            { emphasis: false, text: "." }
+        ],
     },
     banner: {
-        image: "/assets/images/cars-banner--benjamin-fay.jpg", // Photo by <a href="https://unsplash.com/@radcartier?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Benjamin Fay</a> on <a href="https://unsplash.com/photos/a-city-street-filled-with-lots-of-traffic-q4kD6q3pD7Y?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-        alt: "City street filled with lots of traffic image by Benjamin Fay",
-        imageAuthor: "Benjamin Fay",
-        imageCreditLink: "https://unsplash.com/@radcartier",
+        image: "/assets/images/car-banner--averie-woodard--soomi-edit.jpg", // Photo by <a href="https://unsplash.com/@averieclaire?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">averie woodard</a> on <a href="https://unsplash.com/photos/woman-sitting-on-roof-of-white-sedan-Tfzlo-KdPxo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        alt: "Young woman in denim sitting on car roof by averie woodard.",
+        imageAuthor: "averie woodard",
+        imageCreditLink: "https://unsplash.com/@averieclaire",
     },
     challengesHeader: "Els nostres reptes",
     challenges: [
