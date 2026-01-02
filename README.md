@@ -41,4 +41,7 @@ Imatges d'Unsplash amb crèdit als autors:
 
 
 ---
-© 2025 Somi. All rights reserved.  
+## Notice
+© 2025-2026 Somi. All rights reserved.
+> Note: Viewing this repository is permitted solely for demonstration purposes.
+
