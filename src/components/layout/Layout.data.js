@@ -11,6 +11,7 @@ export const footerContent = {
     email: "contacte@somi.cat",
     contactLabel: "Escriu-nos a",
     disclaimers: {
+        webCreationYear: 2025,
         rights: "Tots els drets reservats.",
         privacy: "No recollim dades personals dels visitants.",
         info: "Contingut informatiu i promocional.",

@@ -1,6 +1,15 @@
 import { navItems, footerContent } from './Layout.data';
 
 const Footer = () => {
+
+  const startYear = footerContent.disclaimers.webCreationYear;
+  const currentYear = new Date().getFullYear();
+
+  const yearDisplay =
+    startYear === currentYear
+      ? startYear
+      : `${startYear}–${currentYear}`;
+
   return (
     <footer className="bg-white border-t border-gray-200">
       <div className="container max-w-7xl mx-auto px-4 py-12 md:py-16">
@@ -54,7 +63,7 @@ const Footer = () => {
 
         {/* Bottom row: horizontal line + copyright & disclaimers */}
         <div className="border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4 text-gray-500 text-xs">
-          <p>© {new Date().getFullYear()} Somi. {footerContent.disclaimers.rights}</p>
+          <p>© {yearDisplay} Somi. {footerContent.disclaimers.rights}</p>
           <div className="flex flex-wrap justify-center md:justify-end gap-4">
             <span>{footerContent.disclaimers.privacy}</span>
             <span>{footerContent.disclaimers.info}</span>
