@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Users, MapPin, Calendar } from 'lucide-react';
 import { heroContent } from './Hero.data.js';
