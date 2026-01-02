@@ -20,15 +20,10 @@ const Features = () => {
   }, []);
 
   return (
-    <section id="features" className="page-section py-24 bg-somi-50">
+    <section id="caracteristiques" className="page-section py-24 bg-somi-50">
       <div className="container">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
-          <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-somi-100 text-somi-800 mb-4">
-            <span className="flex h-2 w-2 rounded-full bg-somi-500 mr-2"></span>
-            {featuresHeader.badge}
-          </div>
-
           <h2 className="heading-lg text-gray-900 mb-4">
             {featuresHeader.title.normal}
             <span className="text-gradient">{featuresHeader.title.highlight}</span>

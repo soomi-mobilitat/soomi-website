@@ -23,9 +23,10 @@ Obre http://localhost:8080 al navegador.
 npm run build
 ```
 
-## Construcció per producció
-Imatges d’Unsplash amb crèdit als autors:
+## Crèdits d'imatges de lliure ús
+Imatges d'Unsplash amb crèdit als autors:
 
+ - [Averie Claire](https://unsplash.com/@averieclaire)
  - [GeoJango Maps](https://unsplash.com/@geojango_maps)
  - [Deng Xiang](https://unsplash.com/@dengxiangs)
  - [Luis Villasmil](https://unsplash.com/@luisviol)
@@ -34,10 +35,13 @@ Imatges d’Unsplash amb crèdit als autors:
 ## Contacte
 **Vols saber més sobre el projecte?**
 
-> Escriu-nos per conèixer més detalls o per col·laborar amb aquest projecte que canviarà la mobilitat a Catalunya.
+> Escriu-nos per conèixer més detalls o per col·laborar amb aquest projecte.
 
 [contacte@somi.cat](mailto:contacte@somi.cat)
 
 
 ---
-© 2025 Somi. All rights reserved.  
+## Notice
+© 2025-2026 Somi. All rights reserved.
+> Note: Viewing this repository is permitted solely for demonstration purposes.
+

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Users, MapPin, Calendar } from 'lucide-react';
 import { heroContent } from './Hero.data.js';
@@ -22,7 +22,7 @@ const Hero = () => {
   const icons = { Users, MapPin, Calendar };
 
   return (
-    <section id="home" className="relative overflow-hidden min-h-screen flex items-center pt-28 pb-16">
+    <section id="inici" className="relative overflow-hidden min-h-screen flex items-center pt-28 pb-16">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-somi-50/50 to-white -z-10"></div>
 
@@ -33,25 +33,19 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Text content */}
           <div className="animate-on-scroll">
-            {/* Badge */}
-            <div className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-somi-100 text-somi-800 mb-6">
-              <span className="flex h-2 w-2 rounded-full bg-somi-500 mr-2"></span>
-              {heroContent.badge}
-            </div>
-
             {/* Logo + slogan */}
             <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mb-8">
-              <div className="flex-shrink-0 mb-4 md:mb-0">
-                <img src="/assets/icons/main_logo_mark.svg" alt="Somi Logo" className="h-48 w-auto" />
+              <div className="invisible sm:visible flex-shrink-0 mb-4 md:mb-0">
+                <img src="/assets/icons/main_logo_mark.svg" alt="Somi Logo" className="h-0 sm:h-48 w-auto" />
               </div>
-              <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-snug mb-2 mt-4">
+              <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-snug mb-2 mt-0 sm:mt-4">
                 {heroContent.slogan.main} <span className="text-somi-500">{heroContent.slogan.highlight}</span>
               </h1>
             </div>
 
             {/* Description */}
-            <p className="text-lg sm:text-xl text-gray-600 max-w-2xl">
-              <b className="text-gray-900">{heroContent.descriptionInBold}</b>
+            <p className="text-justify text-lg sm:text-xl text-gray-600 max-w-2xl">
+              <b className="text-gray-900 ">{heroContent.descriptionInBold}</b>
               {heroContent.description.map((part, index) => (
                 <span
                   key={index}
@@ -64,12 +58,13 @@ const Hero = () => {
 
 
             {/* CTA */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-12 mt-8">
+            <div className="flex flex-col flex-row gap-4 mb-12 mt-8">
               <Button
+                asChild
                 variant="outline"
-                className="rounded-full px-8 py-6 border-gray-300 hover:bg-gray-50 button-hover-effect"
+                className="rounded-full px-8 py-6 border-gray-300 hover:bg-gray-50 button-hover-effect lg:text-lg"
               >
-                <a href="#features">{heroContent.cta}</a>
+                <a href="#caracteristiques">{heroContent.cta}</a>
               </Button>
             </div>
 
@@ -99,7 +94,7 @@ const Hero = () => {
                 <div className="h-1.5 w-20 bg-gray-800 rounded-full"></div>
               </div>
               <img
-                src="/assets/images/journey-list-popup-somi.jpg"
+                src="/assets/images/journey-list-popup-somi.png"
                 alt="Somi App Mockup"
                 className="w-full h-full object-cover"
               />

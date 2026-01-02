@@ -1,11 +1,10 @@
 export const featuresHeader = {
-  badge: 'Característiques',
   title: {
-    normal: 'Simplifiquem el teu camí cap a un transport ',
-    highlight: 'més col·laboratiu',
+    normal: 'Una app ',
+    highlight: 'eficient i intuïtiva',
   },
   description:
-    "Somi ofereix un conjunt complet d'eines dissenyades per fer que compartir cotxe dins de les comunitats sigui senzill, segur i pràctic per a tothom.",
+    "",
 };
 
 export const featuresContent = [
@@ -13,48 +12,49 @@ export const featuresContent = [
     icon: 'UserPlus',
     title: "Comptes d'Usuari",
     description:
-      "Registra't amb la teva adreça de correu electrònic. Crea el teu perfil i accedeix a les teves comunitats.",
+      "Inscriu-te a l'app i crea el teu perfil personal.",
   },
   {
     icon: 'Users',
     title: 'Comunitats',
     description:
-      "Uneix-te a comunitats oficials, públiques o privades. Crea la teva pròpia comunitat i convida altres usuaris a unir-se.",
+      "Uneix-te a comunitats públiques o privades. Crea noves comunitats i convida altres usuaris a unir-s'hi.",
   },
   {
     icon: 'Car',
     title: 'Crea Trajectes',
     description:
-      'Crea trajectes amb punts de sortida i arribada, horaris, i seients disponibles. Agafa passatgers de la teva comunitat.',
+      'Ofereix els seients disponibles del teu vehicle a altres membres de la teva comunitat.',
   },
   {
     icon: 'MapPin',
-    title: 'Proposa Trajectes',
+    title: 'Sol·licita Trajectes',
     description:
-      'Si no tens cotxe, proposa trajectes com a passatger i connecta amb conductors de la teva comunitat que busquen compartir costos.',
+      'Proposa trajectes com a passatger i connecta amb conductors de la teva comunitat que busquen compartir vehicle.',
   },
   {
     icon: 'Calendar',
-    title: 'Calendari de Trajectes',
+    title: 'Calendari Comunitari',
     description:
-      "Calendari comunitari interactiu per a la planificació de viatges i coordinació d'esdeveniments.",
+      "Visualitza fàcilment els trajectes que ofereixen o sol·liciten els membres de la teva comunitat.",
   },
   {
     icon: 'MessageSquare',
-    title: 'Comunicació',
+    title: 'Xat',
     description:
-      'Xats comunitaris i específics per viatge per coordinar detalls i discussions.',
-  },
-  {
-    icon: 'Shield',
-    title: 'Seguretat i Privacitat',
-    description:
-      "Comunitats verificades o privades, verificació d'usuaris i autogestió de comunitats per administradors locals.",
+      'Conversa amb la teva comunitat o ultima els detalls dels teus trajectes.',
   },
   {
     icon: 'Bell',
     title: 'Notificacions',
     description:
-      "Rep alertes d'actualitzacions de viatges, missatges comunitaris i anuncis importants.",
+      "Rep alertes d'actualitzacions de trajectes, missatges comunitaris i anuncis importants.",
   },
+  {
+    icon: 'Shield',
+    title: 'Seguretat i Privacitat',
+    description:
+      "Verifica la teva identitat, crea comunitats privades i viatja de forma segura.",
+  },
+
 ];

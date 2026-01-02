@@ -3,10 +3,10 @@ import { useEffect } from 'react';
 import Header from '@/components/layout/Header';
 import Hero from '@/components/hero/Hero';
 import Features from '@/components/features/Features';
-import Download from '@/components/download/Download';
+import Contact from '@/components/contact/Contact';
 import Footer from '@/components/layout/Footer';
 import ScrollToTopButton from '@/components/ui/scroll-to-top-button';
-import AboutUs from '@/components/about-us/AboutUs';
+import Mission from '@/components/mission/Mission';
 import Services from '@/components/services/Services';
 
 const Index = () => {
@@ -39,9 +39,9 @@ const Index = () => {
       <main>
         <Hero />
         <Features />
-        <AboutUs />
+        <Mission />
         <Services />
-        <Download />
+        <Contact />
         <ScrollToTopButton />
       </main>
       <Footer />
