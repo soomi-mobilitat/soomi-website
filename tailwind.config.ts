@@ -29,7 +29,7 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				somi: {
+				soomi: {
 					50: '#FFFEE6',
 					100: '#FFFACC',
 					200: '#FFF599',

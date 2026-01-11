@@ -88,7 +88,7 @@
 
 @layer base {
   * {
-    @apply border-border selection:bg-somi-100 selection:text-somi-900;
+    @apply border-border selection:bg-soomi-100 selection:text-soomi-900;
   }
 
   html {
@@ -118,7 +118,7 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-somi-500 to-somi-700 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-soomi-500 to-soomi-700 bg-clip-text text-transparent;
   }
   
   .subtle-shadow {

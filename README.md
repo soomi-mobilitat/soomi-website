@@ -1,12 +1,12 @@
-# Somi Website
+# Soomi Website
 
-Web oficial de **Somi**, comunitat en moviment.
+Web oficial de **Soomi**, comunitat en moviment.
 
 ## Instal·lació
 
 ```bash
-git clone https://github.com/nom-usuari/somi-website.git
-cd somi-website
+git clone https://github.com/soomi-mobilitat/soomi-website.git
+cd soomi-website
 npm install
 ```
 
@@ -42,6 +42,6 @@ Imatges d'Unsplash amb crèdit als autors:
 
 ---
 ## Notice
-© 2025-2026 Somi. All rights reserved.
+© 2025-2026 Soomi. All rights reserved.
 > Note: Viewing this repository is permitted solely for demonstration purposes.
 

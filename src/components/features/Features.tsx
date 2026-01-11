@@ -20,7 +20,7 @@ const Features = () => {
   }, []);
 
   return (
-    <section id="caracteristiques" className="page-section py-24 bg-somi-50">
+    <section id="caracteristiques" className="page-section py-24 bg-soomi-50">
       <div className="container">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-on-scroll">
@@ -44,7 +44,7 @@ const Features = () => {
                 className="glass-card rounded-2xl p-6 animate-on-scroll"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="h-12 w-12 rounded-xl bg-somi-100 text-somi-700 flex items-center justify-center mb-5">
+                <div className="h-12 w-12 rounded-xl bg-soomi-100 text-soomi-700 flex items-center justify-center mb-5">
                   {IconComponent && <IconComponent className="h-7 w-7" />}
                 </div>
                 <h3 className="heading-sm text-gray-900 mb-3">
