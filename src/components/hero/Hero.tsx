@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Users, MapPin, Calendar } from 'lucide-react';
 import { heroContent } from './Hero.data.js';
+import SpacedSoomiLogo from '../ui/spaced-soomi-logo.js';
 
 const Hero = () => {
 
@@ -34,9 +35,13 @@ const Hero = () => {
           {/* Left column - Text content */}
           <div className="animate-on-scroll">
             {/* Logo + slogan */}
-            <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mb-8">
-              <div className="invisible sm:visible flex-shrink-0 mb-4 md:mb-0">
-                <img src="/assets/icons/main_logo_mark.svg" alt="Soomi Logo" className="h-0 sm:h-48 w-auto" />
+            <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mb-4">
+              <div className="invisible md:visible flex-shrink-0 mb-4 md:mb-0">
+                <SpacedSoomiLogo
+                  height={12 * 16} // 12 rem in px (~ h-48 tailwind)
+                  type="main"
+                  src="/assets/icons/main_logo_mark-cropped.svg"
+                />
               </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-snug mb-2 mt-0 sm:mt-4">
                 {heroContent.slogan.main} <span className="text-soomi-500">{heroContent.slogan.highlight}</span>
