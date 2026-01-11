@@ -28,7 +28,7 @@ const Mission = () => {
             {missionContent.header.title.map((part, index) => (
               <span
                 key={index}
-                className={part.emphasis ? 'font-bold text-4xl text-somi-600' : ''}
+                className={part.emphasis ? 'font-bold text-4xl text-soomi-600' : ''}
               >
                 {part.text}
               </span>
@@ -38,7 +38,7 @@ const Mission = () => {
             {missionContent.header.subtitle.map((part, index) => (
               <span
                 key={index}
-                className={part.emphasis ? 'font-bold text-xl text-somi-600' : ''}
+                className={part.emphasis ? 'font-bold text-xl text-soomi-600' : ''}
               >
                 {part.text}
               </span>
@@ -74,7 +74,7 @@ const Mission = () => {
                     key={index}
                     className="flex items-center justify-center text-center 
                     rounded-full px-6 py-6 min-w-[140px] max-w-[180px] w-full sm:w-[45%] md:w-[180px] h-[170px]
-                    bg-white border-4 border-somi-500 
+                    bg-white border-4 border-soomi-500 
                     shadow-[0_4px_6px_rgba(0,0,0,0.08),_0_8px_20px_rgba(0,0,0,0.08)]
                     transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_16px_rgba(0,0,0,0.12)]"
                   >

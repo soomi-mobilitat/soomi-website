@@ -1,11 +1,11 @@
 export const contactContent = {
     header: {
         title: 'Pròximament disponible',
-        subtitle: 'Aviat podràs descarregar Somi i unir-te a la comunitat en moviment.',
+        subtitle: 'Aviat podràs descarregar Soomi i unir-te a la comunitat en moviment.',
     },
     leftColumn: {
         title: "Aplicació mòbil",
-        description1: "Descarrega l'app de Somi per gaudir d'una mobilitat més sostenible i eficient.",
+        description1: "Descarrega l'app de Soomi per gaudir d'una mobilitat més sostenible i eficient.",
         description2: "Pròximament a les principals plataformes.",
         appStore: {
             src: "https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg",

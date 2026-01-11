@@ -19,7 +19,7 @@ const ScrollToTopButton = () => {
         <a
             href="/#"
             aria-label="Torna a dalt"
-            className="fixed bottom-6 right-6 bg-somi-500 text-white p-3 rounded-full shadow-lg hover:bg-somi-600 transition-colors"
+            className="fixed bottom-6 right-6 bg-soomi-500 text-white p-3 rounded-full shadow-lg hover:bg-soomi-600 transition-colors"
         >
             <ArrowUp size={20} />
         </a>
