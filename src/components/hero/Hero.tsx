@@ -36,7 +36,7 @@ const Hero = () => {
           <div className="animate-on-scroll">
             {/* Logo + slogan */}
             <div className="flex flex-col md:flex-row md:items-center md:space-x-8 mb-4">
-              <div className="invisible md:visible flex-shrink-0 mb-4 md:mb-0">
+              <div className="hidden md:block flex-shrink-0 mb-4 md:mb-0">
                 <SpacedSoomiLogo
                   height={12 * 16} // 12 rem in px (~ h-48 tailwind)
                   type="main"
