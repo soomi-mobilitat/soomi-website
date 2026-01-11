@@ -7,10 +7,9 @@ export const missionContent = {
     header: {
         title: [
             { emphasis: false, text: "Per què hem creat " },
-            { emphasis: true, text: "Somi" },
+            { emphasis: true, text: "Soomi" },
             { emphasis: false, text: " ?" },
         ],
-        //"Per què hem creat Somi ?", // posar somi en groc
         subtitle: [
             { emphasis: false, text: "La nostra missió és construir un " },
             { emphasis: true, text: "territori" },
