@@ -3,7 +3,7 @@ export const heroContent = {
         main: 'Comunitat en',
         highlight: 'moviment',
     },
-    descriptionInBold: 'Somi',
+    descriptionInBold: 'Soomi',
     description: [
         { emphasis: false, text: ' connecta conductors i passatgers en ' },
         { emphasis: true, text: 'comunitats locals' },

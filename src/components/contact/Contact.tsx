@@ -110,7 +110,7 @@ const Contact = () => {
               {/* Email bottom */}
               <a
                 href={`mailto:${contactContent.rightColumn.email}`}
-                className="inline-flex items-center justify-center gap-2 bg-somi-500 hover:bg-somi-600 text-white px-4 py-2 rounded-full transition-colors max-w-full"
+                className="inline-flex items-center justify-center gap-2 bg-soomi-500 hover:bg-soomi-600 text-white px-4 py-2 rounded-full transition-colors max-w-full"
               >
                 <Mail className="h-5 w-5 flex-shrink-0" />
                 <b className="text-xs sm:text-sm md:text-lg lg:text-2xl truncate">

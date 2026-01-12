@@ -20,7 +20,7 @@ export const servicesContent = {
             icon: TabletSmartphone,
             title: "L'app",
             items: [
-                "📱 App Somi disponible per a tots els membres de la vostra comunitat.",
+                "📱 App Soomi disponible per a tots els membres de la vostra comunitat.",
                 "🏛️ Imatge institucional integrada.",
                 "👥 Gestió d'una comunitat oficial de l'organització.",
                 "✅ Sistema de verificació de membres.",
