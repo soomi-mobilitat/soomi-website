@@ -37,7 +37,7 @@ Imatges d'Unsplash amb crèdit als autors:
 
 > Escriu-nos per conèixer més detalls o per col·laborar amb aquest projecte.
 
-[contacte@somi.cat](mailto:contacte@somi.cat)
+[contacte@soomi.cat](mailto:contacte@soomi.cat)
 
 
 ---

@@ -8,7 +8,7 @@ export const navItems = [
 
 export const footerContent = {
     slogan: "Comunitat en moviment",
-    email: "contacte@somi.cat",
+    email: "contacte@soomi.cat",
     contactLabel: "Escriu-nos a",
     disclaimers: {
         webCreationYear: 2025,

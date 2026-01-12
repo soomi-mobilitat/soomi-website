@@ -21,6 +21,6 @@ export const contactContent = {
     rightColumn: {
         title: "Vols saber més sobre el projecte?",
         description: "Escriu-nos per conèixer-ne més detalls o per col·laborar amb el projecte.",
-        email: "contacte@somi.cat",
+        email: "contacte@soomi.cat",
     },
 };
