@@ -15,6 +15,7 @@ on:
       - "vite.config.ts"
       - "tsconfig*.json"
       - "components.json"
+      - ".nvmrc"
       - ".github/workflows/deploy.yml"
 
 permissions:
@@ -30,7 +31,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version-file: .nvmrc
 
       - name: Install dependencies
         run: npm install
