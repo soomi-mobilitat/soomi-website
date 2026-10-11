@@ -1,6 +1,235 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@plugin 'tailwindcss-animate';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: Montserrat Variable, Montserrat, ui-sans-serif, system-ui;
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-soomi-50: #fffee6;
+  --color-soomi-100: #fffacc;
+  --color-soomi-200: #fff599;
+  --color-soomi-300: #fff066;
+  --color-soomi-400: #ffeb33;
+  --color-soomi-500: #ffd400;
+  --color-soomi-600: #e6bf00;
+  --color-soomi-700: #ccaa00;
+  --color-soomi-800: #b39500;
+  --color-soomi-900: #997f00;
+
+  --color-secondary-50: #f2f7e8;
+  --color-secondary-100: #e5efcf;
+  --color-secondary-200: #cbdf9f;
+  --color-secondary-300: #b1cf6f;
+  --color-secondary-400: #97bf40;
+  --color-secondary-500: #4f772d;
+  --color-secondary-600: #476a29;
+  --color-secondary-700: #3f5e24;
+  --color-secondary-800: #37511f;
+  --color-secondary-900: #2f451a;
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-sidebar: hsl(var(--sidebar-background));
+  --color-sidebar-foreground: hsl(var(--sidebar-foreground));
+  --color-sidebar-primary: hsl(var(--sidebar-primary));
+  --color-sidebar-primary-foreground: hsl(var(--sidebar-primary-foreground));
+  --color-sidebar-accent: hsl(var(--sidebar-accent));
+  --color-sidebar-accent-foreground: hsl(var(--sidebar-accent-foreground));
+  --color-sidebar-border: hsl(var(--sidebar-border));
+  --color-sidebar-ring: hsl(var(--sidebar-ring));
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-fade-in: fade-in 0.5s ease-out;
+  --animate-fade-up: fade-up 0.5s ease-out;
+  --animate-slide-in-right: slide-in-right 0.5s ease-out;
+  --animate-slide-in-left: slide-in-left 0.5s ease-out;
+  --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+  @media (width >= --theme(--breakpoint-sm)) {
+    max-width: none;
+  }
+  @media (width >= 1400px) {
+    max-width: 1400px;
+  }
+}
+
+@utility glass-card {
+  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-xs;
+}
+
+@utility glass-card-dark {
+  @apply bg-black/10 backdrop-blur-md border border-white/10 shadow-md;
+}
+
+@utility frosted-glass {
+  @apply bg-white/80 backdrop-blur-lg border border-white/30 shadow-lg;
+}
+
+@utility button-hover-effect {
+  @apply transition-all duration-300 ease-in-out transform hover:scale-105;
+}
+
+@utility text-gradient {
+  @apply bg-linear-to-r from-soomi-500 to-soomi-700 bg-clip-text text-transparent;
+}
+
+@utility subtle-shadow {
+  @apply shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)];
+}
+
+@utility page-section {
+  @apply py-20 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto;
+}
+
+@utility heading-xl {
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
+}
+
+@utility heading-lg {
+  @apply text-3xl md:text-4xl font-bold tracking-tight;
+}
+
+@utility heading-md {
+  @apply text-2xl md:text-3xl font-semibold;
+}
+
+@utility heading-sm {
+  @apply text-xl md:text-2xl font-semibold;
+}
+
+@utility body-lg {
+  @apply text-lg leading-relaxed;
+}
+
+@utility body-base {
+  @apply text-base leading-relaxed;
+}
+
+@utility body-sm {
+  @apply text-sm leading-relaxed;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+/*
+  Tailwind CSS v4 no longer sets `cursor: pointer` on buttons by default.
+  Restore the v3 behaviour.
+*/
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
 
 @layer base {
   :root {
@@ -95,64 +324,6 @@
 
   body {
     @apply bg-background text-foreground font-sans;
-  }
-}
-
-@layer components {
-  .glass-card {
-    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
-  }
-  
-  .glass-card-dark {
-    @apply bg-black/10 backdrop-blur-md border border-white/10 shadow-md;
-  }
-  
-  .frosted-glass {
-    @apply bg-white/80 backdrop-blur-lg border border-white/30 shadow-lg;
-  }
-  
-  .button-hover-effect {
-    @apply transition-all duration-300 ease-in-out transform hover:scale-105;
-  }
-  
-  .text-gradient {
-    @apply bg-gradient-to-r from-soomi-500 to-soomi-700 bg-clip-text text-transparent;
-  }
-  
-  .subtle-shadow {
-    @apply shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)];
-  }
-  
-  .page-section {
-    @apply py-20 px-4 sm:px-6 md:px-8 max-w-7xl mx-auto;
-  }
-  
-  .heading-xl {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight;
-  }
-  
-  .heading-lg {
-    @apply text-3xl md:text-4xl font-bold tracking-tight;
-  }
-  
-  .heading-md {
-    @apply text-2xl md:text-3xl font-semibold;
-  }
-  
-  .heading-sm {
-    @apply text-xl md:text-2xl font-semibold;
-  }
-  
-  .body-lg {
-    @apply text-lg leading-relaxed;
-  }
-  
-  .body-base {
-    @apply text-base leading-relaxed;
-  }
-  
-  .body-sm {
-    @apply text-sm leading-relaxed;
   }
 }
 

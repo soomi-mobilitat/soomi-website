@@ -59,11 +59,11 @@ const Mission = () => {
               className="w-full h-56 object-cover rounded-2xl shadow-md"
             />
           </picture>
-          <div className="absolute inset-0 bg-gradient-to-t from-white/10 to-transparent rounded-2xl"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-white/10 to-transparent rounded-2xl"></div>
         </div>
 
         {/* CONTENT */}
-        <div className="bg-white rounded-2xl p-10 shadow-sm border border-gray-100 animate-on-scroll">
+        <div className="bg-white rounded-2xl p-10 shadow-xs border border-gray-100 animate-on-scroll">
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-12 items-start">
 
             {/* LEFT: Challenges */}
@@ -81,7 +81,7 @@ const Mission = () => {
                     className="flex items-center justify-center text-center 
                     rounded-full px-6 py-6 min-w-[140px] max-w-[180px] w-full sm:w-[45%] md:w-[180px] h-[170px]
                     bg-white border-4 border-soomi-500 
-                    shadow-[0_4px_6px_rgba(0,0,0,0.08),_0_8px_20px_rgba(0,0,0,0.08)]
+                    shadow-[0_4px_6px_rgba(0,0,0,0.08),0_8px_20px_rgba(0,0,0,0.08)]
                     transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_8px_16px_rgba(0,0,0,0.12)]"
                   >
                     <b className="font-medium text-md text-gray-700 z-10">{challenge.text}</b>
@@ -100,7 +100,7 @@ const Mission = () => {
                   const Icon = value.icon;
                   return (
                     <li key={index} className="flex items-center gap-3 text-gray-900">
-                      <Icon className="h-5 w-5 text-black flex-shrink-0" />
+                      <Icon className="h-5 w-5 text-black shrink-0" />
                       <span>{value.text}</span>
                     </li>
                   );

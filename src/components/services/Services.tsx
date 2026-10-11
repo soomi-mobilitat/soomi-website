@@ -55,7 +55,7 @@ const MunicipalServices = () => {
               return (
                 <div
                   key={index}
-                  className="bg-green-50 rounded-2xl p-8 shadow-sm border border-green-100 hover:shadow-md transition-all cursor-pointer flex flex-col h-full"
+                  className="bg-green-50 rounded-2xl p-8 shadow-xs border border-green-100 hover:shadow-md transition-all cursor-pointer flex flex-col h-full"
                   onClick={() => document.getElementById('contacte')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   <div className="flex justify-center mb-6">

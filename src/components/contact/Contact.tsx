@@ -54,7 +54,7 @@ const Contact = () => {
         </div>
 
         {/* Columns */}
-        <div className="bg-white rounded-2xl p-10 shadow-sm border border-gray-100 animate-on-scroll">
+        <div className="bg-white rounded-2xl p-10 shadow-xs border border-gray-100 animate-on-scroll">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
             {/* LEFT */}
@@ -112,7 +112,7 @@ const Contact = () => {
                 href={`mailto:${contactContent.rightColumn.email}`}
                 className="inline-flex items-center justify-center gap-2 bg-soomi-500 hover:bg-soomi-600 text-white px-4 py-2 rounded-full transition-colors max-w-full"
               >
-                <Mail className="h-5 w-5 flex-shrink-0" />
+                <Mail className="h-5 w-5 shrink-0" />
                 <b className="text-xs sm:text-sm md:text-lg lg:text-2xl truncate">
                   {contactContent.rightColumn.email}
                 </b>
