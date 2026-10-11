@@ -64,7 +64,18 @@ const Footer = () => {
 
         {/* Bottom row: horizontal line + copyright & disclaimers */}
         <div className="border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4 text-gray-500 text-xs">
-          <p>© {yearDisplay} Soomi. {footerContent.disclaimers.rights}</p>
+          <div className="flex flex-wrap justify-center md:justify-start items-center gap-x-4 gap-y-2">
+            <p>© {yearDisplay} Soomi. {footerContent.disclaimers.rights}</p>
+            {footerContent.legalLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="underline underline-offset-2 hover:text-soomi-600"
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
           <div className="flex flex-wrap justify-center md:justify-end gap-4">
             <span>{footerContent.disclaimers.privacy}</span>
             <span>{footerContent.disclaimers.info}</span>

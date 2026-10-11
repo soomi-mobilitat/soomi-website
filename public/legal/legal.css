@@ -1,0 +1,101 @@
+/* Montserrat (SIL OFL), self-hosted: no requests to third-party font servers */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('fonts/montserrat-latin-wght-normal.woff2') format('woff2-variations');
+}
+
+:root {
+  --soomi-50:  #FFFEE6;
+  --soomi-500: #FFD400;
+  --green-500: #4F772D;
+  --ink:       #1A1A14;
+  --muted:     #6B6B5E;
+  --rule:      #E8E6D8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--ink);
+  background: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 0;
+}
+header img { height: 3rem; width: auto; display: block; }
+header a.back { color: var(--muted); font-size: 0.875rem; text-decoration: none; }
+header a.back:hover { color: var(--ink); text-decoration: underline; }
+
+main {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.25;
+  font-weight: 800;
+  margin: 1rem 0 1.25rem;
+}
+h2 {
+  font-size: 1.15rem;
+  line-height: 1.35;
+  font-weight: 700;
+  margin: 2.25rem 0 0.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+}
+
+p, ul { margin: 0 0 1rem; }
+ul { padding-left: 1.5rem; }
+li { margin-bottom: 0.4rem; }
+li::marker { color: var(--green-500); }
+
+a { color: var(--green-500); text-underline-offset: 2px; }
+
+.meta { color: var(--muted); font-size: 0.9rem; }
+h1 + .meta { margin-top: -0.75rem; }
+
+.details { list-style: none; padding: 0; }
+.details li { margin-bottom: 0.25rem; }
+
+.email {
+  margin: 0.5rem 0 1rem 1.5rem;
+  font-weight: 600;
+}
+
+/* Unfilled placeholders from the source document: must be completed before publishing */
+mark.todo { background: var(--soomi-500); padding: 0 0.25rem; }
+
+footer {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+footer a { color: var(--muted); }
+
+@media (min-width: 640px) {
+  h1 { font-size: 2.125rem; }
+  main { padding-top: 2rem; }
+}

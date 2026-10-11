@@ -17,4 +17,7 @@ export const footerContent = {
         info: "Contingut informatiu i promocional.",
         cookies: "No utilitzem cookies de tercers.",
     },
+    legalLinks: [
+        { name: "Política de privacitat", href: "/legal/privacitat.html" },
+    ],
 };
