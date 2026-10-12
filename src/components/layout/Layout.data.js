@@ -19,5 +19,6 @@ export const footerContent = {
     },
     legalLinks: [
         { name: "Política de privacitat", href: "/legal/privacitat.html" },
+        { name: "Termes i condicions", href: "/legal/termes.html" },
     ],
 };
