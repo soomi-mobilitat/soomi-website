@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Users, MapPin, Calendar } from 'lucide-react';
 import { heroContent, heroScreenshots } from './Hero.data.js';
@@ -6,21 +5,6 @@ import ScreenshotCarousel from './ScreenshotCarousel';
 import SpacedSoomiLogo from '@/components/ui/spaced-soomi-logo';
 
 const Hero = () => {
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      },
-      { threshold: 0.1 }
-    );
-
-    const elements = document.querySelectorAll('.animate-on-scroll');
-    elements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
   const icons = { Users, MapPin, Calendar };
 
   return (

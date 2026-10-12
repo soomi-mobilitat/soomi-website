@@ -6,22 +6,6 @@ const MOBILE_BREAKPOINT = 768
 
 const Contact = () => {
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add('visible');
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const elements = document.querySelectorAll('.animate-on-scroll');
-    elements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
     const handleHashScroll = () => {
       if (window.location.hash === '#contacte' && window.innerWidth < MOBILE_BREAKPOINT) {
         const contactCol = document.querySelector('.right-column');

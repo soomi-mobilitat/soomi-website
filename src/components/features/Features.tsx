@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { UserPlus, Users, Car, MapPin, Calendar, MessageSquare, Bell, Shield } from 'lucide-react';
 import { featuresContent, featuresHeader } from './Features.data';
 
@@ -6,22 +5,6 @@ import { featuresContent, featuresHeader } from './Features.data';
 const icons = { UserPlus, Users, Car, MapPin, Calendar, MessageSquare, Bell, Shield };
 
 const Features = () => {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add('visible');
-        });
-      },
-      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
-    );
-
-    const elements = document.querySelectorAll('.animate-on-scroll');
-    elements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section id="caracteristiques" className="page-section py-24 bg-soomi-50">
       <div className="container">

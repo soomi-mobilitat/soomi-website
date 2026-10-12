@@ -10,27 +10,22 @@ import Mission from '@/components/mission/Mission';
 import Services from '@/components/services/Services';
 
 const Index = () => {
+  // Reveal `.animate-on-scroll` elements once they enter the viewport
   useEffect(() => {
-    const handleScroll = () => {
-      const elements = document.querySelectorAll('.animate-on-scroll');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.1 }
+    );
 
-      elements.forEach(element => {
-        const elementPosition = element.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
+    document.querySelectorAll('.animate-on-scroll').forEach((el) => observer.observe(el));
 
-        if (elementPosition.top < windowHeight * 0.85) {
-          element.classList.add('visible');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    // Trigger on initial load
-    handleScroll();
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => observer.disconnect();
   }, []);
 
   return (

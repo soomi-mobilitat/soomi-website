@@ -1,24 +1,7 @@
-import { useEffect } from 'react';
 import { missionContent } from './Mission.data.js';
 import { Unplug } from 'lucide-react';
 
 const Mission = () => {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add('visible');
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const elements = document.querySelectorAll('.animate-on-scroll');
-    elements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section id="missio-valors" className="page-section py-24 bg-gray-50">
       <div className="container">
