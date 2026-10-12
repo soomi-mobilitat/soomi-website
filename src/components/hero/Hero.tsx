@@ -27,6 +27,7 @@ const Hero = () => {
                   height={12 * 16} // 12 rem in px (~ h-48 tailwind)
                   type="main"
                   src="/assets/icons/main_logo_mark-cropped.svg"
+                  aspectRatio={454.5 / 462} // SVG viewBox
                 />
               </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-snug sm:leading-none mb-2 mt-0 sm:mt-4 text-center md:text-right md:mr-24 xl:text-left xl:mr-0">

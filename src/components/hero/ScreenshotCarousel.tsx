@@ -4,6 +4,15 @@ import { cn } from '@/lib/utils';
 
 const INTERVAL_MS = 10000;
 
+// Rendered width of a phone at each breakpoint (matches the slot classes below)
+const SIZES = '(min-width: 1280px) 260px, (min-width: 1024px) 230px, (min-width: 768px) 220px, (min-width: 640px) 280px, 260px';
+
+// Each screenshot `name.webp` (720px wide) also exists as `name-360w.webp` and `name-540w.webp`
+const srcSetFor = (src: string) => {
+  const base = src.replace(/\.webp$/, '');
+  return `${base}-360w.webp 360w, ${base}-540w.webp 540w, ${src} 720w`;
+};
+
 type Screenshot = { src: string; alt: string };
 
 const ScreenshotCarousel = ({ screenshots }: { screenshots: Screenshot[] }) => {
@@ -35,10 +44,15 @@ const ScreenshotCarousel = ({ screenshots }: { screenshots: Screenshot[] }) => {
                 <img
                   key={shot.src}
                   src={shot.src}
+                  srcSet={srcSetFor(shot.src)}
+                  sizes={SIZES}
                   alt={shot.alt}
                   width={720}
                   height={1616}
                   aria-hidden={i !== active}
+                  // Only the shown screenshot competes for bandwidth on load
+                  loading={i === active ? undefined : 'lazy'}
+                  fetchPriority={i === active ? undefined : 'low'}
                   className={cn(
                     'absolute inset-0 w-full h-full transition-opacity duration-700',
                     slot === 1 && 'delay-150',

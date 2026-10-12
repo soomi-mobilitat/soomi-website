@@ -32,7 +32,11 @@ const Mission = () => {
         {/* IMAGE BAND */}
         <div className="relative w-full mb-8 animate-on-scroll">
           <picture>
-            <source srcSet={missionContent.banner.image.replace(/\.(jpg|jpeg)$/, '.webp')} type="image/webp" />
+            <source
+              srcSet={missionContent.banner.imageSrcSet}
+              sizes="(min-width: 1400px) 1336px, 100vw"
+              type="image/webp"
+            />
             <img
               src={missionContent.banner.image}
               alt={missionContent.banner.alt}

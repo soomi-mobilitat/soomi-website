@@ -59,7 +59,11 @@ const MunicipalServices = () => {
                     ))}
                   </ul>
                   <picture>
-                    <source srcSet={service.image.replace(/\.(jpg|jpeg)$/, '.webp')} type="image/webp" />
+                    <source
+                      srcSet={service.imageSrcSet ?? service.image.replace(/\.(jpg|jpeg)$/, '.webp')}
+                      sizes="(min-width: 768px) 33vw, 100vw"
+                      type="image/webp"
+                    />
                     <img src={service.image} alt={service.alt} width={1200} height={800} loading="lazy" className="rounded-xl mt-6 w-full object-cover" />
                   </picture>
                 </div>

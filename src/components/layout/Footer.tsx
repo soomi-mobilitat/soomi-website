@@ -22,6 +22,9 @@ const Footer = () => {
             <img
               src="/assets/icons/main_logo_mark-cropped.svg"
               alt="Soomi logo"
+              width={79}
+              height={80}
+              loading="lazy"
               className="h-20 w-auto px-8"
             />
             <p className="text-gray-600 text-sm text-center">{footerContent.slogan}</p>

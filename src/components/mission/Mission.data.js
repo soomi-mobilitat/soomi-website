@@ -24,6 +24,7 @@ export const missionContent = {
     },
     banner: {
         image: "/assets/images/car-banner--averie-woodard--soomi-edit.jpg", // Photo by <a href="https://unsplash.com/@averieclaire?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">averie woodard</a> on <a href="https://unsplash.com/photos/woman-sitting-on-roof-of-white-sedan-Tfzlo-KdPxo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        imageSrcSet: "/assets/images/car-banner--averie-woodard--soomi-edit-768w.webp 768w, /assets/images/car-banner--averie-woodard--soomi-edit.webp 1536w",
         alt: "Young woman in denim sitting on car roof by averie woodard.",
         imageAuthor: "averie woodard",
         imageCreditLink: "https://unsplash.com/@averieclaire",

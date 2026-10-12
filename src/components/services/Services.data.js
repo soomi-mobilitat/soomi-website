@@ -26,6 +26,7 @@ export const servicesContent = {
                 "✅ Sistema de verificació de membres.",
             ],
             image: "/assets/images/map-pins--geojango-maps.jpg", // Photo by <a href="https://unsplash.com/@geojango_maps?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">GeoJango Maps</a> on <a href="https://unsplash.com/photos/person-holding-red-round-medication-pill-Z8UgB80_46w?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            imageSrcSet: "/assets/images/map-pins--geojango-maps-640w.webp 640w, /assets/images/map-pins--geojango-maps.webp 1200w",
             alt: "Map pins image by GeoJango Maps",
             imageAuthor: "GeoJango Maps",
             imageCreditLink: "https://unsplash.com/@geojango_maps",
@@ -53,6 +54,7 @@ export const servicesContent = {
                 "🔔 Sistema de notificacions i avisos.",
             ],
             image: "/assets/images/marketing--luis-villasmil.jpg", // Photo by <a href="https://unsplash.com/@luisviol?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luis Villasmil</a> on <a href="https://unsplash.com/photos/person-holding-black-smartphone-4V8uMZx8FYA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            imageSrcSet: "/assets/images/marketing--luis-villasmil-640w.webp 640w, /assets/images/marketing--luis-villasmil.webp 1200w",
             alt: "Workteam image by Luis Villasmil",
             imageAuthor: "Luis Villasmil",
             imageCreditLink: "https://unsplash.com/@luisviol",

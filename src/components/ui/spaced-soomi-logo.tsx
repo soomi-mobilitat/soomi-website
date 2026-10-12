@@ -6,11 +6,12 @@ interface SpacedSoomiLogoProps {
   height: number; // original height in px
   type: LogoType;
   src: string;
+  aspectRatio?: number; // width / height of the image; when known the img gets an explicit size (avoids layout shift)
 }
 
 // A component that renders the Soomi logo with appropriate spacing around it
 // based on whether it's the main or secondary logo, according to corporate design guidelines.
-const SpacedSoomiLogo: React.FC<SpacedSoomiLogoProps> = ({ height, type, src }) => {
+const SpacedSoomiLogo: React.FC<SpacedSoomiLogoProps> = ({ height, type, src, aspectRatio }) => {
   // Corporate logo spacing factors
   const marginYFactor = type === "main"
     ? 0.2
@@ -23,10 +24,12 @@ const SpacedSoomiLogo: React.FC<SpacedSoomiLogoProps> = ({ height, type, src }) 
     <img
       src={src}
       alt={`Soomi ${type === "main" ? "Main" : "Secondary"} Logo`}
+      width={aspectRatio ? Math.round(newHeight * aspectRatio) : undefined}
+      height={Math.round(newHeight)}
       style={{
         height: `${newHeight}px`,
         margin: `${margin}px`,
-        width: "auto"
+        width: aspectRatio ? `${newHeight * aspectRatio}px` : "auto"
       }}
     />
   );

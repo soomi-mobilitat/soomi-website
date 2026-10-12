@@ -28,9 +28,9 @@ const Header = () => {
             <img
               src="/assets/icons/main_logo_mark-cropped.svg"
               alt="Soomi logo"
-              width={48}
+              width={47}
               height={48}
-              className="h-12 w-auto"
+              className="h-12"
             />
           </a>
 

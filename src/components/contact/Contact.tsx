@@ -64,7 +64,10 @@ const Contact = () => {
                   <img
                     src={contactContent.leftColumn.appStore.src}
                     alt={contactContent.leftColumn.appStore.alt}
-                    className="h-12 w-auto lg:mr-8"
+                    width={144}
+                    height={48}
+                    loading="lazy"
+                    className="h-12 lg:mr-8"
                   />
                 </span>
                 <span
@@ -74,7 +77,10 @@ const Contact = () => {
                   <img
                     src={contactContent.leftColumn.googlePlay.src}
                     alt={contactContent.leftColumn.googlePlay.alt}
-                    className="h-12 w-auto"
+                    width={162}
+                    height={48}
+                    loading="lazy"
+                    className="h-12"
                   />
                 </span>
               </div>
