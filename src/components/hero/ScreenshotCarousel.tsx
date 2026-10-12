@@ -4,14 +4,10 @@ import { cn } from '@/lib/utils';
 
 const INTERVAL_MS = 10000;
 
-// Rendered width of a phone at each breakpoint (matches the slot classes below)
-const SIZES = '(min-width: 1280px) 260px, (min-width: 1024px) 230px, (min-width: 768px) 220px, (min-width: 640px) 280px, 260px';
-
-// Each screenshot `name.webp` (720px wide) also exists as `name-360w.webp` and `name-540w.webp`
-const srcSetFor = (src: string) => {
-  const base = src.replace(/\.webp$/, '');
-  return `${base}-360w.webp 360w, ${base}-540w.webp 540w, ${src} 720w`;
-};
+// Pick by screen density rather than layout width: small UI text in the captures needs about 2x
+// the displayed pixels to stay sharp (≈260px wide), so 1x screens get the 540w file and denser ones
+// the full 720w `name.webp`
+const srcSetFor = (src: string) => `${src.replace(/\.webp$/, '-540w.webp')} 1x, ${src} 2x`;
 
 type Screenshot = { src: string; alt: string };
 
@@ -49,7 +45,6 @@ const ScreenshotCarousel = ({ screenshots }: { screenshots: Screenshot[] }) => {
                   key={shot.src}
                   src={shot.src}
                   srcSet={srcSetFor(shot.src)}
-                  sizes={SIZES}
                   alt={shot.alt}
                   width={720}
                   height={1616}
