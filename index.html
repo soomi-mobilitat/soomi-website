@@ -25,6 +25,9 @@
     <!-- Canonical link -->
     <link rel="canonical" href="https://soomi.cat/" />
 
+    <!-- LCP image (header logo): start fetching before the JS bundle renders it -->
+    <link rel="preload" as="image" href="/assets/icons/main_logo_mark-cropped.svg" fetchpriority="high" />
+
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />

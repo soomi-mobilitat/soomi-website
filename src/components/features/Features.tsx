@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
-import * as Icons from 'lucide-react';
+import { UserPlus, Users, Car, MapPin, Calendar, MessageSquare, Bell, Shield } from 'lucide-react';
 import { featuresContent, featuresHeader } from './Features.data';
+
+// Icons referenced by name in Features.data
+const icons = { UserPlus, Users, Car, MapPin, Calendar, MessageSquare, Bell, Shield };
 
 const Features = () => {
   useEffect(() => {
@@ -37,7 +40,7 @@ const Features = () => {
         {/* Features grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {featuresContent.map((feature, index) => {
-            const IconComponent = Icons[feature.icon];
+            const IconComponent = icons[feature.icon];
             return (
               <div
                 key={index}

@@ -36,6 +36,8 @@ const ScreenshotCarousel = ({ screenshots }: { screenshots: Screenshot[] }) => {
                   key={shot.src}
                   src={shot.src}
                   alt={shot.alt}
+                  width={720}
+                  height={1616}
                   aria-hidden={i !== active}
                   className={cn(
                     'absolute inset-0 w-full h-full transition-opacity duration-700',
@@ -50,7 +52,7 @@ const ScreenshotCarousel = ({ screenshots }: { screenshots: Screenshot[] }) => {
       </div>
 
       {/* Page indicators */}
-      <div className="flex gap-2 mt-6">
+      <div className="flex mt-4">
         {Array.from({ length: pages }, (_, i) => (
           <button
             key={i}
@@ -58,11 +60,15 @@ const ScreenshotCarousel = ({ screenshots }: { screenshots: Screenshot[] }) => {
             aria-label={`Captura ${i + 1} de ${pages}`}
             aria-current={i === currentPage}
             onClick={() => setPage(i)}
-            className={cn(
-              'h-2 rounded-full transition-all',
-              i === currentPage ? 'w-6 bg-soomi-500' : 'w-2 bg-gray-300 hover:bg-gray-400'
-            )}
-          />
+            className="group p-2" // padding gives a comfortable tap target around the small dot
+          >
+            <span
+              className={cn(
+                'block h-2 rounded-full transition-all',
+                i === currentPage ? 'w-6 bg-soomi-500' : 'w-2 bg-gray-300 group-hover:bg-gray-400'
+              )}
+            />
+          </button>
         ))}
       </div>
     </div>

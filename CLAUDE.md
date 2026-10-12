@@ -39,4 +39,4 @@ Single-page React app (Vite + TypeScript + Tailwind) for the Soomi website — a
 
 **UI components** in `src/components/ui/` are shadcn/ui-style components. `SpacedSoomiLogo` in `src/components/ui/spaced-soomi-logo.tsx` applies corporate logo spacing rules (margin factors differ between `"main"` and `"secondary"` logo types).
 
-**Assets** live in `public/assets/`: SVG icons in `/assets/icons/`, images in `/assets/images/`.
+**Assets** live in `public/assets/`: SVG icons in `/assets/icons/`, images in `/assets/images/`. Everything under `public/` is deployed, so only put optimized, referenced files there (e.g. resized WebP). Source originals (full-size PNG captures, etc.) go in `design/` at the repo root, e.g. `design/screenshots/`, which is not deployed.
