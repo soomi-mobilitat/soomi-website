@@ -32,3 +32,11 @@ export const heroContent = {
         },
     ],
 };
+
+// Fixed order: on wide screens they pair up as (communities, calendar) and (invitation, trips)
+export const heroScreenshots = [
+    { src: '/assets/images/soomi-screenshots/4_m6plz.png', alt: 'Llista de comunitats a l\'app Soomi' },
+    { src: '/assets/images/soomi-screenshots/1_m6plz.png', alt: 'Calendari setmanal amb els trajectes de la comunitat' },
+    { src: '/assets/images/soomi-screenshots/7_m6plz.png', alt: 'Invitació a un trajecte per acceptar o rebutjar' },
+    { src: '/assets/images/soomi-screenshots/3_m6plz.png', alt: 'Trajectes disponibles amb horari, preu i places lliures' },
+];

@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Users, MapPin, Calendar } from 'lucide-react';
-import { heroContent } from './Hero.data.js';
+import { heroContent, heroScreenshots } from './Hero.data.js';
+import ScreenshotCarousel from './ScreenshotCarousel';
 import SpacedSoomiLogo from '@/components/ui/spaced-soomi-logo';
 
 const Hero = () => {
@@ -95,16 +96,7 @@ const Hero = () => {
 
           {/* Right column - App visualization */}
           <div className="relative flex justify-center lg:justify-end animate-on-scroll">
-            <div className="relative z-10 w-[280px] sm:w-[320px] h-[580px] sm:h-[620px] rounded-[2.5rem] border-12 border-gray-900 overflow-hidden shadow-xl">
-              <div className="absolute top-0 left-0 right-0 h-6 bg-gray-900 z-20 rounded-t-lg flex items-center justify-center">
-                <div className="h-1.5 w-20 bg-gray-800 rounded-full"></div>
-              </div>
-              <img
-                src="/assets/images/journey-list-popup-soomi.png"
-                alt="Soomi App Mockup"
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <ScreenshotCarousel screenshots={heroScreenshots} />
 
             {/* Decorative elements */}
             <div className="absolute -top-10 -right-10 h-64 w-64 bg-soomi-200/30 rounded-full blur-3xl z-0"></div>
