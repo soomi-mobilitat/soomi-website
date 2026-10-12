@@ -17,8 +17,8 @@ const Hero = () => {
 
       <div className="container px-4 sm:px-6 mx-auto max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left column - Text content */}
-          <div className="animate-on-scroll">
+          {/* Left column - Text content. Not animated: it's above the fold and should paint with the HTML */}
+          <div>
             {/* Logo + slogan */}
             <div className="flex flex-col md:flex-row md:items-center md:space-x-8 xl:space-x-0 mb-4">
               {/* Logo only on wide screens: on smaller screens it already shows in the header */}
@@ -80,7 +80,7 @@ const Hero = () => {
           </div>
 
           {/* Right column - App visualization */}
-          <div className="relative flex justify-center lg:justify-end animate-on-scroll">
+          <div className="relative flex justify-center lg:justify-end animate-fade-in">
             <ScreenshotCarousel screenshots={heroScreenshots} />
 
             {/* Decorative elements */}

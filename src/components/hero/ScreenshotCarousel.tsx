@@ -38,7 +38,11 @@ const ScreenshotCarousel = ({ screenshots }: { screenshots: Screenshot[] }) => {
           return (
             <div
               key={slot}
-              className="relative aspect-[1080/2424] w-[260px] sm:w-[280px] md:w-[220px] lg:w-[230px] xl:w-[260px] overflow-hidden rounded-[11%/4.9%] shadow-xl"
+              // The prerendered HTML has two slots: hide the second one on phones until hydration removes it
+              className={cn(
+                'relative aspect-[1080/2424] w-[260px] sm:w-[280px] md:w-[220px] lg:w-[230px] xl:w-[260px] overflow-hidden rounded-[11%/4.9%] shadow-xl',
+                slot === 1 && 'hidden md:block'
+              )}
             >
               {screenshots.map((shot, i) => (
                 <img
