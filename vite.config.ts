@@ -13,6 +13,10 @@ export default defineConfig(({ isSsrBuild }) => ({
     react(),
     tailwindcss(),
   ].filter(Boolean),
+  define: {
+    // Year of the build, baked into both the client bundle and the prerendered HTML (see Footer)
+    __BUILD_YEAR__: JSON.stringify(new Date().getFullYear()),
+  },
   build: {
     // The SSR build only produces the prerender entry: public/ is already in the client build
     copyPublicDir: !isSsrBuild,

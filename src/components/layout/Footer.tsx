@@ -1,9 +1,18 @@
+import { useSyncExternalStore } from 'react';
 import { navItems, footerContent } from './Layout.data';
+
+// The year never changes while the page is open, so there is nothing to subscribe to
+const subscribe = () => () => {};
+
+// Hydrate with the build year so it matches the prerendered HTML; React then switches to the
+// visitor's year if it differs (only when the site wasn't rebuilt since New Year)
+const useCurrentYear = () =>
+  useSyncExternalStore(subscribe, () => new Date().getFullYear(), () => __BUILD_YEAR__);
 
 const Footer = () => {
 
   const startYear = footerContent.disclaimers.webCreationYear;
-  const currentYear = new Date().getFullYear();
+  const currentYear = useCurrentYear();
 
   const yearDisplay =
     startYear === currentYear
