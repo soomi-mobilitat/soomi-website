@@ -39,12 +39,24 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Check hidden files
+        run: |
+          unexpected=$(find dist -name '.*' ! -path 'dist/.well-known')
+          if [ -n "$unexpected" ]; then
+            echo "::error::Unexpected hidden files in dist/:"
+            echo "$unexpected"
+            exit 1
+          fi
+
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v5
         with:
           path: dist/
           retention-days: 1
+          # Dot-paths are dropped by default, which would skip .well-known/
+          # (Microsoft publisher domain verification).
+          include-hidden-files: true
 
   deploy:
     needs: build
