@@ -13,7 +13,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="wordmark" href="https://soomi.cat">soomi<span class="dot">.</span></a>
+  <a class="logo" href="https://soomi.cat">
+    <img src="/assets/icons/main_logo_mark-cropped.svg" alt="Soomi" width="79" height="80">
+  </a>
 
   <!-- Mobile view -->
   <main id="mobile" class="card hidden">
@@ -47,10 +49,13 @@
         document.getElementById("mobile").classList.remove("hidden");
 
         if (isAndroid) {
-          document.getElementById("store-link").href = SOOMI_APP.androidStore;
-          // Android shows a disambiguation dialog — user taps to confirm.
-          // No auto-redirect to store: let the user tap "Download" if needed.
-          window.location.href = SOOMI_APP.scheme;
+          // Chrome opens the app if installed, otherwise follows the fallback URL to the store.
+          // It may block the automatic launch without a user gesture, so the button carries
+          // the same link.
+          var intentUrl = "intent://open#Intent;scheme=soomi;package=" + SOOMI_APP.androidPackage +
+            ";S.browser_fallback_url=" + encodeURIComponent(SOOMI_APP.androidStore) + ";end";
+          document.getElementById("store-link").href = intentUrl;
+          window.location.href = intentUrl;
         } else {
           // iOS: custom schemes either open the app or do nothing — timer covers the fallback.
           document.getElementById("store-link").href = SOOMI_APP.iosStore;
