@@ -4,3 +4,7 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
+    ignore:
+      # Types follow the Node major in .nvmrc; bump them by hand with it
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
