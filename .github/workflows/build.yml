@@ -6,6 +6,24 @@ on:
   push:
     branches:
       - dev
+    # Skip the whole run for pushes that touch nothing below (docs, design/, ...).
+    # Keep in sync with the patterns in the "changes" job.
+    paths:
+      - "src/**"
+      - "public/**"
+      - "scripts/**"
+      - "index.html"
+      - "package.json"
+      - "package-lock.json"
+      - "vite.config.ts"
+      - "tsconfig*.json"
+      - "eslint.config.js"
+      - "components.json"
+      - ".nvmrc"
+      - ".lighthouserc.json"
+      - ".github/workflows/build.yml"
+  # No path filter here: Lint and Build are required checks for PRs into main, so the
+  # jobs must always report. Unneeded jobs are skipped instead, which counts as passing.
   pull_request:
     branches:
       - main
@@ -15,8 +33,56 @@ permissions:
   actions: read
 
 jobs:
+  changes:
+    name: Detect changes
+    runs-on: ubuntu-latest
+    outputs:
+      lint: ${{ steps.filter.outputs.lint }}
+      build: ${{ steps.filter.outputs.build }}
+      lighthouse: ${{ steps.filter.outputs.lighthouse }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Classify changed files
+        id: filter
+        env:
+          EVENT: ${{ github.event_name }}
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          all() { for k in lint build lighthouse; do echo "$k=true" >> "$GITHUB_OUTPUT"; done; }
+          # Manual runs, new branches and rewritten history: run everything
+          if [ "$EVENT" = workflow_dispatch ] || ! git cat-file -e "$BASE^{commit}" 2>/dev/null; then
+            echo "No usable base commit, running all jobs"; all; exit 0
+          fi
+
+          files=$(git diff --name-only "$BASE...$HEAD")
+          echo "Changed files:"; echo "$files"
+
+          # Shared by every job: dependencies, toolchain and this workflow
+          common='^(package(-lock)?\.json|\.nvmrc|\.github/workflows/build\.yml)$'
+          # Code that ESLint and tsc look at
+          lint="$common|^src/.*\.(ts|tsx|js|jsx|mjs)$|^scripts/|^(eslint\.config\.js|vite\.config\.ts|tsconfig.*\.json)$"
+          # Anything that ends up in dist/ (Lighthouse runs on top of the build)
+          build="$common|^(src|public|scripts)/|^(index\.html|vite\.config\.ts|tsconfig.*\.json|components\.json|\.lighthouserc\.json)$"
+          # Lighthouse only audits the home page, so the static legal pages don't count
+          lighthouse="$build"
+          site_files=$(grep -v '^public/legal/' <<< "$files" || true)
+
+          for k in lint build lighthouse; do
+            list=$site_files
+            # Legal pages are deployed with the site, so they still need a build
+            [ "$k" = build ] && list=$files
+            if grep -qE "${!k}" <<< "$list"; then v=true; else v=false; fi
+            echo "$k=$v" | tee -a "$GITHUB_OUTPUT"
+          done
+
   lint:
     name: Lint
+    needs: changes
+    if: needs.changes.outputs.lint == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -33,6 +99,8 @@ jobs:
 
   build:
     name: Build
+    needs: changes
+    if: needs.changes.outputs.build == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -57,7 +125,8 @@ jobs:
   lighthouse:
     name: Lighthouse
     runs-on: ubuntu-latest
-    needs: build
+    needs: [changes, build]
+    if: needs.changes.outputs.lighthouse == 'true'
     steps:
       - uses: actions/checkout@v5
 
